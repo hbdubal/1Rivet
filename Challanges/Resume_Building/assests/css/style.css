@@ -1,0 +1,16 @@
+*{margin:0;padding: 0;box-sizing: border-box;font-family: 'Lato', sans-serif;}body{background-color: #eeeeee;}
+
+/*-------------- RESUME-PRAC -----------*/
+h1{text-transform: uppercase;color: #e74554;font-weight: 700;}
+a{text-decoration: none;color: #c4949e;font-weight: 400;}
+.tab_margin{margin: 30px 0;}
+main{width: 800px;height: 100%;background-color: #ffffff;padding:80px 60px 60px;margin: 0 auto;border-left: 10px solid #dc143c;}
+table{width: 100%;text-align: left;}
+table th p{margin: 3px 0;}
+table a.link{color: #000000;}
+table h5{text-transform: uppercase;font-weight:600;}
+table p{font-weight: 400;font-size: 14px;}
+table td{vertical-align: top;}
+table td.details{width: 300px;font-size:15px;text-align: center;color: #cf6b7d;text-transform: uppercase;font-weight: 600;}
+table strong, table td.skills{text-transform: capitalize;font-size: 14px;}
+/* table th > strong{text-transform: uppercase;} */
