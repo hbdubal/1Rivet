@@ -1,0 +1,50 @@
+//Main
+main {
+    background-color: $primary-bg-color;
+
+    p {
+        color: $info-text-color;
+        margin-bottom: 0;
+    }
+}
+//Dashboard
+.dashboard-wrapper {
+    background: $white;
+    padding: 20px;
+
+    .dash_icon {
+        background-color: $dash-icon-bg;
+        padding: 13px;
+        color: $white;
+        border-radius: $icon-wrap-border-radius;
+        overflow: hidden;
+        height: 30px;
+        width: 30px;
+        flex-shrink: 0;
+    }
+}
+
+h4,
+h5 {
+    color: $info-text-color;
+}
+//Card
+.card-heading {
+
+    .card-info {
+        span {
+            color: $text-secondary-color;
+        }
+    }
+}
+.card{
+    .list-group-item
+    {
+        span
+        {
+            font-size: 12px;
+            color: $text-span;
+        }
+    }
+}
+

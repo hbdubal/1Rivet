@@ -1,0 +1,35 @@
+.aside-main {
+    width: $aside-flex-basis;
+}
+
+.nav {
+    .nav-item {
+        .nav-link {
+
+            &.active,
+            &:hover {
+                color: $nav-link-active-color;
+                background-color: rgba($nav-link-active-bg, 0.15);
+                border-radius: $nav-link-border-radius;
+            }
+        }
+    }
+}
+
+.add_wrapper {
+    background-color: $add_wrapper-bg-color;
+    border-radius: $add_wrapper-border-radius;
+    .calendar {
+        margin-top: -42px;
+        font-size: $font-size-md;
+    }
+    .img_wrap {
+        width: $img-width;
+        height: $img-height;
+    }
+}
+
+.secondary_aside
+{
+flex-basis: $aside-flex-basis;
+}

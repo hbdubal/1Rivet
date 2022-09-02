@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Bootstrap Assesment</title>
+</head>
+
+<body>
+    <div class="d-flex h-100 overflow-hidden">
+        <!-- Left-Sidebar -->
+        <aside class="aside-main d-flex flex-column overflow-hidden h-100">
+            <!-- Logo -->
+            <div class="logo-wrap d-flex align-items-center justify-content-center px-4">
+                <span class="fa-solid fa-heart-circle-bolt pe-3 brand-logo"></span>
+                <h4 class="d-flex mb-0">
+                    <span class="text-secondary text-uppercase">fittle</span>
+                </h4>
+            </div>
+            <!-- End: Logo -->
+            <!-- Navbar -->
+            <div class="d-flex flex-column overflow-hidden h-100">
+                <ul class="nav flex-column flex-grow-1 overflow-auto flex-nowrap">
+                    <li class="nav-item mb-4">
+                        <a class="nav-link py-4 d-flex flex-column text-center active" href="#">
+                            <span class="fa-solid fa-record-vinyl mb-3"></span>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-4">
+                        <a class="nav-link py-4 d-flex flex-column text-center" href="#">
+                            <span class="fa-solid fa-record-vinyl mb-3"></span>
+                            <span>My Subscription</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-4">
+                        <a class="nav-link py-4 d-flex flex-column text-center" href="#">
+                            <span class="fa-solid fa-record-vinyl mb-3"></span>
+                            <span>My Studio</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-4">
+                        <a class="nav-link py-4 d-flex flex-column text-center" href="#">
+                            <span class="fa-solid fa-record-vinyl mb-3"></span>
+                            <span>Post a Job</span></a>
+                    </li>
+                    <li class="nav-item mb-4">
+                        <a class="nav-link py-4 d-flex flex-column text-center" href="#">
+                            <span class="fa-solid fa-record-vinyl mb-3"></span>
+                            <span>My Events</span></a>
+                    </li>
+                    <li class="nav-item mb-4">
+                        <a class="nav-link py-4 d-flex flex-column text-center" href="#">
+                            <span class="fa-solid fa-record-vinyl mb-3"></span>
+                            <span>Notifications</span></a>
+                    </li>
+                    <li class="nav-item mb-4">
+                        <a class="nav-link py-4 d-flex flex-column text-center" href="#">
+                            <span class="fa-solid fa-record-vinyl mb-3"></span>
+                            <span>Settings</span></a>
+                    </li>
+                </ul>
+                </div>
+            <!-- End: Navbar -->
+        </aside>
+        <!-- End: Left-Sidebar -->
+
+        <!-- Main-Section -->
+        <section class="wrapper flex-grow-1 overflow-hidden">
+            <!-- Header-Topbar -->
+            <header class="w-100 d-flex px-4 py-4 justify-content-between align-items-center">
+                <!-- Searchbar -->
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <form class="d-flex search" role="search">
+                                <input class="form-control me-2 border-0" type="search" id="searchBar"
+                                    placeholder="Search" aria-label="Search">
+                                <label for="searchBar" class="searchicon">
+                                    <span class="fa fa-search text-secondary"></span>
+                                </label>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+                <!-- End: Searchbar -->
+                <!-- Profile-Bar -->
+                <div class="d-flex align-items-center profile_wrap overflow-hidden">
+                    <a href="#" class="notification pe-3">
+                        <span class="fa-solid fa-bell text-secondary"></span>
+                    </a>
+                    <span class="pro_name pe-3 text-secondary">Ryan Gostling</span>
+                    <a class="d-flex align-items-center dropdown">
+                        <div class="profile">
+                            <img src="assets/images/profile.png" alt="">
+                        </div>
+                    </a>
+                </div>
+            </header>
+            <!--End: Profile-Bar -->
+            <!-- End: Header-Topbar -->
+
+            <!-- Main-Inner-Content -->
+            <main class="d-flex flex-grow-1 px-4 py-4 h-100 overflow-hidden">
+                <div class="flex-grow-1">
+                    <!-- Top-inner-content -->
+                    <div class="dashboard-content overflow-hidden">
+                        <div class="dash">
+                            <h4>Dashboard</h4>
+                            <p>Hello, Ryan! Check out what'shappening today!</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="dashboard-wrapper d-flex align-items-center mt-4">
+                                    <div class="dash_icon align-items-center justify-content-center me-3">
+                                        <span class="fa-sharp fa-solid fa-exclamation"></span>
+                                    </div>
+                                    <div class="dash_info">
+                                        <p>Thanks For joining YPC! Go ahead and
+                                            <button type="button" class="ms-3 btn btn-success">Create Now</button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="dashboard-wrapper d-flex align-items-center mt-4">
+                                    <div class="dash_icon align-items-center justify-content-center me-3">
+                                        <span class="fa-sharp fa-solid fa-exclamation"></span>
+                                    </div>
+                                    <div class="dash_info">
+                                        <p>You have <strong>2</strong> unread notification
+                                            <button type="button" class="btn btn-secondary">Check Now</button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End: Top-inner-content -->
+
+                    <!-- Bottom-inner-content -->
+                    <div class="instruction_wrapper mt-5 overflow-hidden">
+                        <div class="row overflow-hidden">
+                            <div class="col-md-6 col-sm-4">
+                                <div class="card d-flex overflow-auto">
+                                    <div class="card-heading p-3 d-flex justify-content-between">
+                                        <h5> New Brisbane Instructors - 02</h5>
+                                        <div class="card-info">
+                                            <span class="fa-sharp fa-solid fa-eye"></span>
+                                            <span>View All</span>
+                                            <span class="fa-sharp fa-solid fa-caret-right"></span>
+                                        </div>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item p-3">
+                                            <div class="d-flex justify-content-between">
+                                                <h5>Thomas Budiman</h5>
+                                                <span class="fa-solid fa-clock">&nbsp;5min</span>
+                                            </div>
+                                            <div class="mt-2 mb-3">
+                                                <span>24 hours Fitness, | 1050 brown street</span>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="btn btn-secondary">Go somewhere</a>
+                                                <a href="#" class="btn btn-secondary">Go somewhere</a>
+                                                <a href="#" class="btn btn-secondary">Go somewhere</a>
+
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item p-3">
+                                            <div class="d-flex justify-content-between">
+                                                <h5>Thomas Budiman</h5>
+                                                <span class="fa-solid fa-clock">&nbsp;5min</span>
+                                            </div>
+                                            <div class="mt-2 mb-3">
+                                                <span>24 hours Fitness, | 1050 brown street</span>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="btn btn-secondary">Go somewhere</a>
+                                                <a href="#" class="btn btn-secondary">Go somewhere</a>
+                                                <a href="#" class="btn btn-secondary">Go somewhere</a>
+
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item p-3">
+                                            <div class="d-flex justify-content-between">
+                                                <h5>Thomas Budiman</h5>
+                                                <span class="fa-solid fa-clock">&nbsp;5min</span>
+                                            </div>
+                                            <div class="mt-2 mb-3">
+                                                <span>24 hours Fitness, | 1050 brown street</span>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="btn btn-secondary">Go somewhere</a>
+                                                <a href="#" class="btn btn-secondary">Go somewhere</a>
+                                                <a href="#" class="btn btn-secondary">Go somewhere</a>
+
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-4">
+                                <div class="card">
+                                    <div class="card-heading p-3 d-flex justify-content-between">
+                                        <h5> New Brisbane Instructors - 02</h5>
+                                        <div class="card-info">
+                                            <span class="fa-sharp fa-solid fa-eye"></span>
+                                            <span>View All</span>
+                                            <span class="fa-sharp fa-solid fa-caret-right"></span>
+                                        </div>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item p-3">
+                                            <div class="d-flex justify-content-between">
+                                                <h5>Thomas Budiman</h5>
+                                                <span class="fa-sharp fa-solid fa-clock">&nbsp;5min</span>
+                                            </div>
+                                            <div class="mt-2 mb-3">
+                                                <span>24 hours Fitness, | 1050 brown street</span>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="btn btn-secondary">Go somewhere</a>
+                                                <a href="#" class="btn btn-secondary">Go somewhere</a>
+                                                <a href="#" class="btn btn-secondary">Go somewhere</a>
+
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item p-3">
+                                            <div class="d-flex justify-content-between">
+                                                <h5>Thomas Budiman</h5>
+                                                <span class="fa-sharp fa-solid fa-clock">&nbsp;5min</span>
+                                            </div>
+                                            <div class="mt-2 mb-3">
+                                                <span>24 hours Fitness, | 1050 brown street</span>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="btn btn-secondary">Go somewhere</a>
+                                                <a href="#" class="btn btn-secondary">Go somewhere</a>
+                                                <a href="#" class="btn btn-secondary">Go somewhere</a>
+
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item p-3">
+                                            <div class="d-flex justify-content-between">
+                                                <h5>Thomas Budiman</h5>
+                                                <span class="fa-solid fa-clock">&nbsp;5min</span>
+                                            </div>
+                                            <div class="mt-2 mb-3">
+                                                <span>24 hours Fitness, | 1050 brown street</span>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="btn btn-secondary">Go somewhere</a>
+                                                <a href="#" class="btn btn-secondary">Go somewhere</a>
+                                                <a href="#" class="btn btn-secondary">Go somewhere</a>
+
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End: Bottom-inner-content -->
+                </div>
+            </main>
+            <!-- End: Main-Inner-Content -->
+        </section>
+
+        <!-- End: Main-Section -->
+    </div>
+
+</body>
+
+</html>

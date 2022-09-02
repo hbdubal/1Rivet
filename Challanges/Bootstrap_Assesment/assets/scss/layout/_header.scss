@@ -1,0 +1,33 @@
+//Header
+header {
+    //Search
+    input[type="search"] {
+        position: relative;
+        width: 500px;
+
+        &:focus {
+            box-shadow: $box-shadow;
+            border-color: $border-color;
+        }
+    }
+
+    .searchicon {
+        position: absolute;
+        left: 25px;
+        top: 8px;
+    }
+
+    input[type='search']::placeholder {
+        padding-left: 30px;
+    }
+}
+
+//Profile
+.profile_wrap {
+    .profile {
+        width: $img-width;
+        height: $img-height;
+        border-radius: $img-wrap-border-radius;
+        overflow: hidden;
+    }
+}

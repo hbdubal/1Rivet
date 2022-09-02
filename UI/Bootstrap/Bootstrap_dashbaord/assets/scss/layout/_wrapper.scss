@@ -1,0 +1,31 @@
+main {
+    .card-icon {
+        span {
+            background-color: $card-icon-bg;
+            padding: 8px;
+            color: $white;
+        }
+    }
+
+    .icon2 {
+        span {
+            background-color: $card-icon2-bg;
+            color: $card-icon2-color;
+        }
+    }
+
+    .icon3 {
+        span {
+            background-color: $card-icon3-bg;
+            color: $card-icon3-color;
+        }
+    }
+    .card
+    {
+        :hover
+        {
+            background-color: #0f8bfe;
+            cursor: pointer;
+        }
+    }
+}

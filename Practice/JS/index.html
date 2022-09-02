@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+
+<body>
+    <h1>Javascript</h1>
+    <script>
+        // PUSH METHOD - ADD DATA IN END
+        const myArray = [["John", 23], ["cat", 2]];
+        myArray.push(["dog", 3]);
+        console.log(myArray);
+        document.write(myArray + "<br>")
+        // PUSH METHOD-END
+
+        // POP METHOD- REMOVE LAST ELEMENT 
+        const myData = [["John", 23], ["cat", 2]];
+        myData.pop();
+        console.log(myData);
+        document.write(myData + "<br>")
+        // POP METHOD-END
+
+        // SHIFT METHOD- REMOVES FIRST ELEMENT
+        const data = [["John", 23], ["cat", 2], ["dog", 3]];
+        data.shift();
+        console.log(data);
+        document.write(data + "<br>")
+        // SHIFT METHOD-END
+
+        // UNSHIFT METHOD - ADD ELEMENT IN BEGGINING OF THE ARRAY
+        const ouArray = [["John", 23], ["cat", 2], ["dog", 3]];
+        ouArray.shift();
+        ouArray.unshift(["hiral", 25], ["sheetal", 24]);
+        console.log(ouArray);
+        document.write(ouArray + "<br>" + "<br>");
+        // UNSHIFT METHOD-END
+
+        //MULTIDIMENSIONAL-ARRAY
+        const arrList = [
+            ["grocery", 1],
+            ["vegetable", 2],
+            ["fruit", 3],
+            ["furniture", 4],
+            ["appliances", 5],
+            ["clothes", 6]
+        ];
+        for (a = 0; a < 5; a++) {
+            console.log(arrList[a]);
+            document.write(arrList[a] + "<br>");
+        }
+        //MULTIDIMENSIONAL-ARRAY-END
+
+        //FUNCTION WITH ARGUMENTS
+        function functionWithArgs(a, b) {
+            console.log(a + b)
+        }
+        functionWithArgs(1, 2);
+        functionWithArgs(3, 4);
+        //FUNCTION WITH ARGUMENTS-END
+
+        //FUNCTION WITH RETURN 
+        function funName(number) {
+            return number * 3;
+        }
+        const funFive = funName(3);
+        console.log(funName(3));
+        document.write(funName(3) + "<br>");
+        //FUNCTION WITH RETURN-END
+
+
+        //GLOBAL SCOPE 
+        let myGlobal = 10;
+        let oopsGlobal = 5;
+        function fun1() {}
+        function fun2() {
+            var output = "";
+            if (typeof myGlobal != "undefined") {
+                output += "myGlobal: " + myGlobal;
+            }
+            if (typeof oopsGlobal != "undefined") {
+                output += " oopsGlobal: " + oopsGlobal;
+            }
+            console.log(output);
+            document.write(output + "<br>");
+        }
+    </script>
+
+</body>
+
+</html>

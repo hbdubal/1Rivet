@@ -1,0 +1,71 @@
+// FONTS
+$font-family: 'Poppins', sans-serif;
+$font-weight-normal:400;
+$font-size:16px;
+
+//Common 
+$enable-shadows: true;
+
+// BODY
+$body-bg:#ffffff;
+$body-color: #ffffff;
+
+
+//NAV
+$aside-flex-basis: 180px;
+$nav-link-border-radius:8px;
+$navbar-padding-y:0;
+$navbar-padding-x:0;
+$box-shadow:none;
+$border-color:none;
+
+
+
+//Profile-Wrap
+$img-wrap-border-radius:50%;
+$img-width:40px;
+$img-height:40px;
+$font-size-sm:1.5rem;
+$font-size-md:2rem;
+
+//Icon-wrap
+$icon-wrap-border-radius:$img-wrap-border-radius;
+
+//Btn
+$btn-padding-x: 0.55rem;
+$btn-padding-y: 0.10rem;
+$btn-border-radius: 2.375rem;
+
+//Card
+$card-border-width:0;
+
+// $background-color:(
+//     primary: (
+//     base: $primary-color,
+//     light: lighten($primary-color, $lighten),
+//     dark: darken($primary-color, $darken),
+//   ),
+//   base:(
+//     base: $secondary,
+//     light: lighten($secondary, $lighten),
+//     dark: darken($secondary, $darken),
+//   )
+// )
+
+// $margin:(10px,20px,30px,35px,40px);
+// @for $val from 1 through 4 {
+
+//     h#{$val} {
+//       font-size: nth($margin, $val);
+//     }
+//   }
+
+
+// $btn-bg-color:(#22a49a,#e8f7f4);
+// @each $color in $btn-bg-color {
+
+//     .background-color#{$color} {
+//       background-color: #{$color}px;
+//     //   line-height: #{$size + 2}px;
+//     }
+//   }

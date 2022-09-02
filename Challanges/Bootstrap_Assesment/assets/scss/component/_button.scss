@@ -1,0 +1,22 @@
+.btn-success {
+    background-color: $green;
+    color: $white;
+
+    &:hover {
+        background-color: $btn-secondary-bg-color;
+        color: $green;
+        border: 1px solid $btn-secondary-bg-color;
+    }
+}
+
+.btn-secondary {
+    background-color: $btn-secondary-bg-color;
+    color: $green;
+    border: 1px solid $btn-secondary-bg-color;
+
+    &:hover {
+        background-color: $green;
+        color: $white;
+        border: 1px solid $green;
+    }
+}
