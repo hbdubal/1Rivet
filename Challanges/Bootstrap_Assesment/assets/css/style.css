@@ -8168,13 +8168,13 @@ h5 {
   color: #ffffff;
 }
 .btn-success:hover {
-  background-color: #cdd3d3;
+  background-color: rgba(34, 164, 154, 0.25);
   color: #22a49a;
   border: 1px solid #cdd3d3;
 }
 
 .btn-secondary {
-  background-color: #cdd3d3;
+  background-color: rgba(34, 164, 154, 0.25);
   color: #22a49a;
   border: 1px solid #cdd3d3;
 }

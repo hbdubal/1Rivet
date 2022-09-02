@@ -3,14 +3,14 @@
     color: $white;
 
     &:hover {
-        background-color: $btn-secondary-bg-color;
+        background-color: rgba($green, $alpha: 0.25);
         color: $green;
         border: 1px solid $btn-secondary-bg-color;
     }
 }
 
 .btn-secondary {
-    background-color: $btn-secondary-bg-color;
+    background-color: rgba($green, $alpha: 0.25);
     color: $green;
     border: 1px solid $btn-secondary-bg-color;
 
