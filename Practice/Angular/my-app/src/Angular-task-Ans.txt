@@ -1,0 +1,24 @@
+1)V8 Engine:- Open Source High Performance JS and web assesmbly engine, used in node JS/
+2)Yarn and NPM Diffn:- 
+   1)Yarn is created by facebook and released in oct-2016, Microsoft owns NPM released in 2010
+   2)both are project manager.
+   3)NPM install dependencies for your project sequentially, Yarn will execute installation faster when you have many dependencies.
+   4)In NPM tasks are executed per package and sequentially which means it will wait for a package to be fully installed before moving on to the next, Yarn executes these tasks in parallel and increasing performance.
+3)Angular 13 and Angular 14 Diffn:-
+  1)Angular 13 Released on November 3-2021, Angular 14 Released on 2nd June 2022.
+  2)Angular 13 used Typescript 4.4, Angular 14 Used TypeScript 4.7.
+  3)Angular 13 had GitHub issue, In Angular 14 all GitHub issues were reomoved.
+  4)In Angular 14 we can add dependencies directly on component rather than module.
+  5)In Angular 14 make diff title with every route.
+  6)Angular 14 have extended developer diagnostic that gives you more details for templates errors and warning and help you to improve.
+4)Angular installation:-
+  npm install -g @angular/cli
+  1) ng add: To add support for an external library.
+  2) ng build:- used for deployes the file.
+  3) ng serve:- By executing this command server is responsible to automatically rebuild entire code changes and reloads the same immediately in the pages if the developer changes anything in the source file.
+  4) ng test:-  used to run the unit tests in a project.
+  5) ng e2e: used to run the end to end tests in project.
+5)Linting:- Used for programtic errors, improve the overall quality of code, Improves the code readability.
+6)Workspace:- A workspace contains the files for one or more projects
+               ng new map
+               
