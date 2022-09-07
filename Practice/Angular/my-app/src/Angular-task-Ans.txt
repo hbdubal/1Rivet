@@ -21,4 +21,5 @@
 5)Linting:- Used for programtic errors, improve the overall quality of code, Improves the code readability.
 6)Workspace:- A workspace contains the files for one or more projects
                ng new map
-               
+7)Dependency:- Dependency is a library that a project needs to function effectively.
+8)DevDependencies:- DevDependencies are the packages a developer needs during development. 

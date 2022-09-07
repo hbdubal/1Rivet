@@ -12,4 +12,9 @@ export class ParentComponentsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  // value:string;
+  // submitValue(val)
+  // {
+  //   this.value=val.value;
+  // }
 }

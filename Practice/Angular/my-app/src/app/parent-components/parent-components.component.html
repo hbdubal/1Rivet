@@ -1,5 +1,6 @@
 <div class="area">
     <h2>about</h2>
-    <input type="text" placeholder="Name here...">
-    <button>Submit</button>
+    <input type="text" placeholder="Name here..." #val>
+    <button (click)="submitValue(submit)">Submit</button>
+    <app-parent-components [Myvalue]="value"></app-parent-components>
 </div>
