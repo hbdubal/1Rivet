@@ -30,46 +30,46 @@
             <!-- Navbar -->
             <div class="d-flex flex-column overflow-hidden h-100">
                 <ul class="nav flex-column flex-grow-1 overflow-auto flex-nowrap">
-                    <li class="nav-item mb-4">
+                    <li class="nav-item">
                         <a class="nav-link py-4 d-flex flex-column text-center active" href="#">
                             <span class="fa-solid fa-record-vinyl mb-3"></span>
                             <span>Dashboard</span>
                         </a>
                     </li>
-                    <li class="nav-item mb-4">
+                    <li class="nav-item">
                         <a class="nav-link py-4 d-flex flex-column text-center" href="#">
                             <span class="fa-solid fa-record-vinyl mb-3"></span>
                             <span>My Subscription</span>
                         </a>
                     </li>
-                    <li class="nav-item mb-4">
+                    <li class="nav-item">
                         <a class="nav-link py-4 d-flex flex-column text-center" href="#">
                             <span class="fa-solid fa-record-vinyl mb-3"></span>
                             <span>My Studio</span>
                         </a>
                     </li>
-                    <li class="nav-item mb-4">
+                    <li class="nav-item">
                         <a class="nav-link py-4 d-flex flex-column text-center" href="#">
                             <span class="fa-solid fa-record-vinyl mb-3"></span>
                             <span>Post a Job</span></a>
                     </li>
-                    <li class="nav-item mb-4">
+                    <li class="nav-item">
                         <a class="nav-link py-4 d-flex flex-column text-center" href="#">
                             <span class="fa-solid fa-record-vinyl mb-3"></span>
                             <span>My Events</span></a>
                     </li>
-                    <li class="nav-item mb-4">
+                    <li class="nav-item">
                         <a class="nav-link py-4 d-flex flex-column text-center" href="#">
                             <span class="fa-solid fa-record-vinyl mb-3"></span>
                             <span>Notifications</span></a>
                     </li>
-                    <li class="nav-item mb-4">
+                    <li class="nav-item">
                         <a class="nav-link py-4 d-flex flex-column text-center" href="#">
                             <span class="fa-solid fa-record-vinyl mb-3"></span>
                             <span>Settings</span></a>
                     </li>
                 </ul>
-                </div>
+            </div>
             <!-- End: Navbar -->
         </aside>
         <!-- End: Left-Sidebar -->
@@ -79,26 +79,22 @@
             <!-- Header-Topbar -->
             <header class="w-100 d-flex px-4 py-4 justify-content-between align-items-center">
                 <!-- Searchbar -->
-                <nav class="navbar navbar-expand-lg">
-                    <div class="container-fluid">
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <form class="d-flex search" role="search">
-                                <input class="form-control me-2 border-0" type="search" id="searchBar"
-                                    placeholder="Search" aria-label="Search">
-                                <label for="searchBar" class="searchicon">
-                                    <span class="fa fa-search text-secondary"></span>
-                                </label>
-                            </form>
-                        </div>
-                    </div>
-                </nav>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex search align-items-center" role="search">
+                        <input class="form-control me-2 border-0" type="search" id="searchBar" placeholder="Search"
+                            aria-label="Search">
+                        <label for="searchBar" class="searchicon">
+                            <span class="fa fa-search"></span>
+                        </label>
+                    </form>
+                </div>
                 <!-- End: Searchbar -->
                 <!-- Profile-Bar -->
                 <div class="d-flex align-items-center profile_wrap overflow-hidden">
                     <a href="#" class="notification pe-3">
-                        <span class="fa-solid fa-bell text-secondary"></span>
+                        <span class="fa-solid fa-bell"></span>
                     </a>
-                    <span class="pro_name pe-3 text-secondary">Ryan Gostling</span>
+                    <span class="pro_name pe-3">Ryan Gostling</span>
                     <a class="d-flex align-items-center dropdown">
                         <div class="profile">
                             <img src="assets/images/profile.png" alt="">
@@ -115,36 +111,34 @@
                     <!-- Top-inner-content -->
                     <div class="dashboard-content overflow-hidden">
                         <div class="dash">
-                            <h4>Dashboard</h4>
+                            <h6 class="fw-bold">Dashboard</h6>
                             <p>Hello, Ryan! Check out what'shappening today!</p>
                         </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="dashboard-wrapper d-flex align-items-center mt-4">
-                                    <div class="dash_icon align-items-center justify-content-center me-3">
-                                        <span class="fa-sharp fa-solid fa-exclamation"></span>
-                                    </div>
-                                    <div class="dash_info">
-                                        <p>Thanks For joining YPC! Go ahead and
-                                            <button type="button" class="ms-3 btn btn-success">Create Now</button>
-                                        </p>
-                                    </div>
-                                </div>
+                        <div class="mt-4">
+                        <div class="dashboard-wrapper d-flex align-items-center">
+                            <div class="dash_icon align-items-center justify-content-center me-3">
+                                <span class="fa-sharp fa-solid fa-exclamation"></span>
                             </div>
+                            <div class="dash_info">
+                                <p>Thanks For joining YPC! Go ahead and
+                                    <button type="button" class="ms-3 btn btn-success">Create Now</button>
+                                </p>
+                            </div>
+                            <a href="#" class="close"></a>
                         </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="dashboard-wrapper d-flex align-items-center mt-4">
-                                    <div class="dash_icon align-items-center justify-content-center me-3">
-                                        <span class="fa-sharp fa-solid fa-exclamation"></span>
-                                    </div>
-                                    <div class="dash_info">
-                                        <p>You have <strong>2</strong> unread notification
-                                            <button type="button" class="btn btn-secondary">Check Now</button>
-                                        </p>
-                                    </div>
-                                </div>
+                        </div>
+                         <div class="mt-4">
+                        <div class="dashboard-wrapper d-flex align-items-center mt-4">
+                            <div class="dash_icon align-items-center justify-content-center me-3">
+                                <span class="fa-sharp fa-solid fa-exclamation"></span>
                             </div>
+                            <div class="dash_info">
+                                <p>You have <strong>2</strong> unread notification
+                                    <button type="button" class="ms-3 btn btn-secondary">Check Now</button>
+                                </p>
+                            </div>
+                            <a href="#" class="close"></a>
+                        </div>
                         </div>
                     </div>
                     <!-- End: Top-inner-content -->
@@ -152,119 +146,113 @@
                     <!-- Bottom-inner-content -->
                     <div class="instruction_wrapper mt-5 overflow-hidden">
                         <div class="row overflow-hidden">
-                            <div class="col-md-6 col-sm-4">
+                            <div class="col-md-6 col-sm-12">
                                 <div class="card d-flex overflow-auto">
                                     <div class="card-heading p-3 d-flex justify-content-between">
-                                        <h5> New Brisbane Instructors - 02</h5>
+                                        <h6 class="fw-bold"> New Brisbane Instructors - 02</h6>
                                         <div class="card-info">
-                                            <span class="fa-sharp fa-solid fa-eye"></span>
-                                            <span>View All</span>
+                                            <span class="fa-sharp fa-solid fa-eye card-icon pe-1"></span>
+                                            <span class="fw-normal view-text pe-1">View All</span>
                                             <span class="fa-sharp fa-solid fa-caret-right"></span>
                                         </div>
                                     </div>
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item p-3">
                                             <div class="d-flex justify-content-between">
-                                                <h5>Thomas Budiman</h5>
-                                                <span class="fa-solid fa-clock">&nbsp;5min</span>
+                                                <div class="fw-normal card-title">Thomas Budiman</div>
+                                                <span class="fa-solid fa-clock card-icon fw-light"><span class="ps-2 fw-bold" style="font-size: 10px;">5Min</span></span>
                                             </div>
                                             <div class="mt-2 mb-3">
                                                 <span>24 hours Fitness, | 1050 brown street</span>
                                             </div>
                                             <div>
-                                                <a href="#" class="btn btn-secondary">Go somewhere</a>
-                                                <a href="#" class="btn btn-secondary">Go somewhere</a>
-                                                <a href="#" class="btn btn-secondary">Go somewhere</a>
-
+                                                <a type="button" class="btn btn-success">Go somewhere</a>
+                                                <a type="button" class="btn btn-secondary ms-2">Go somewhere</a>
+                                                <a type="button" class="btn btn-secondary ms-2">Go somewhere</a>
                                             </div>
                                         </li>
                                         <li class="list-group-item p-3">
                                             <div class="d-flex justify-content-between">
-                                                <h5>Thomas Budiman</h5>
-                                                <span class="fa-solid fa-clock">&nbsp;5min</span>
+                                                <div class="fw-normal card-title">Thomas Budiman</div>
+                                                <span class="fa-solid fa-clock card-icon fw-light"><span class="ps-2 card-text-time fw-bold" style="font-size: 10px;">5Min</span></span>
                                             </div>
                                             <div class="mt-2 mb-3">
                                                 <span>24 hours Fitness, | 1050 brown street</span>
                                             </div>
                                             <div>
-                                                <a href="#" class="btn btn-secondary">Go somewhere</a>
-                                                <a href="#" class="btn btn-secondary">Go somewhere</a>
-                                                <a href="#" class="btn btn-secondary">Go somewhere</a>
-
+                                                <a type="button" class="btn btn-secondary">Go somewhere</a>
+                                                <a type="button" class="btn btn-secondary ms-2">Go somewhere</a>
+                                                <a type="button" class="btn btn-secondary ms-2">Go somewhere</a>
                                             </div>
                                         </li>
                                         <li class="list-group-item p-3">
                                             <div class="d-flex justify-content-between">
-                                                <h5>Thomas Budiman</h5>
-                                                <span class="fa-solid fa-clock">&nbsp;5min</span>
+                                                <div class="fw-normal card-title">Thomas Budiman</div>
+                                                <span class="fa-solid fa-clock card-icon fw-light"><span class="ps-2 card-text-time fw-bold" style="font-size: 10px;">5Min</span></span>
                                             </div>
                                             <div class="mt-2 mb-3">
                                                 <span>24 hours Fitness, | 1050 brown street</span>
                                             </div>
                                             <div>
-                                                <a href="#" class="btn btn-secondary">Go somewhere</a>
-                                                <a href="#" class="btn btn-secondary">Go somewhere</a>
-                                                <a href="#" class="btn btn-secondary">Go somewhere</a>
-
+                                                <a type="button" class="btn btn-secondary">Go somewhere</a>
+                                                <a type="button" class="btn btn-secondary ms-2">Go somewhere</a>
+                                                <a type="button" class="btn btn-secondary ms-2">Go somewhere</a>
                                             </div>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-sm-4">
+                            <div class="col-md-6 col-sm-12">
                                 <div class="card">
                                     <div class="card-heading p-3 d-flex justify-content-between">
-                                        <h5> New Brisbane Instructors - 02</h5>
+                                        <h6 class="fw-bold"> New Brisbane Instructors - 02</h6>
                                         <div class="card-info">
-                                            <span class="fa-sharp fa-solid fa-eye"></span>
-                                            <span>View All</span>
+                                            <span class="fa-sharp fa-solid fa-eye card-icon pe-1"></span>
+                                            <span class="fw-normal view-text pe-1">View All</span>
                                             <span class="fa-sharp fa-solid fa-caret-right"></span>
                                         </div>
                                     </div>
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item p-3">
                                             <div class="d-flex justify-content-between">
-                                                <h5>Thomas Budiman</h5>
-                                                <span class="fa-sharp fa-solid fa-clock">&nbsp;5min</span>
+                                                <div class="fw-normal card-title">Thomas Budiman</div>
+                                                <span class="fa-solid fa-clock card-icon fw-light"><span class="ps-2 card-text-time fw-bold" style="font-size: 10px;">5Min</span></span>
                                             </div>
                                             <div class="mt-2 mb-3">
                                                 <span>24 hours Fitness, | 1050 brown street</span>
                                             </div>
                                             <div>
-                                                <a href="#" class="btn btn-secondary">Go somewhere</a>
-                                                <a href="#" class="btn btn-secondary">Go somewhere</a>
-                                                <a href="#" class="btn btn-secondary">Go somewhere</a>
-
+                                                <a type="button" class="btn btn-secondary">Go somewhere</a>
+                                                <a type="button" class="btn btn-secondary ms-2">Go somewhere</a>
+                                                <a type="button" class="btn btn-secondary ms-2">Go somewhere</a>
                                             </div>
                                         </li>
                                         <li class="list-group-item p-3">
                                             <div class="d-flex justify-content-between">
-                                                <h5>Thomas Budiman</h5>
-                                                <span class="fa-sharp fa-solid fa-clock">&nbsp;5min</span>
+                                                <div class="fw-normal card-title">Thomas Budiman</div>
+                                                <span class="fa-solid fa-clock card-icon fw-light"><span class="ps-2 card-text-time fw-bold" style="font-size: 10px;">5Min</span></span>
                                             </div>
                                             <div class="mt-2 mb-3">
                                                 <span>24 hours Fitness, | 1050 brown street</span>
                                             </div>
                                             <div>
-                                                <a href="#" class="btn btn-secondary">Go somewhere</a>
-                                                <a href="#" class="btn btn-secondary">Go somewhere</a>
-                                                <a href="#" class="btn btn-secondary">Go somewhere</a>
-
+                                                <a type="button" class="btn btn-secondary">Go somewhere</a>
+                                                <a type="button" class="btn btn-secondary ms-2">Go somewhere</a>
+                                                <a type="button" class="btn btn-secondary ms-2">Go somewhere</a>
                                             </div>
                                         </li>
                                         <li class="list-group-item p-3">
                                             <div class="d-flex justify-content-between">
-                                                <h5>Thomas Budiman</h5>
-                                                <span class="fa-solid fa-clock">&nbsp;5min</span>
+                                                <div class="fw-normal card-title">Thomas Budiman</div>
+                                                <span class="fa-solid fa-clock card-icon fw-light"><span class="ps-2 card-text-time fw-bold" style="font-size: 10px;">5Min</span></span>
                                             </div>
                                             <div class="mt-2 mb-3">
                                                 <span>24 hours Fitness, | 1050 brown street</span>
                                             </div>
                                             <div>
-                                                <a href="#" class="btn btn-secondary">Go somewhere</a>
-                                                <a href="#" class="btn btn-secondary">Go somewhere</a>
-                                                <a href="#" class="btn btn-secondary">Go somewhere</a>
-
+                                                <a type="button" class="btn btn-secondary">Go somewhere</a>
+                                                <a type="button" class="btn btn-secondary ms-2">Go somewhere</a>
+                                                <a type="button" class="btn btn-secondary ms-2">Go somewhere</a>
                                             </div>
                                         </li>
                                     </ul>

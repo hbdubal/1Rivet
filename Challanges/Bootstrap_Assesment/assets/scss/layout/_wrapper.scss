@@ -1,18 +1,22 @@
 //Main
 main {
     background-color: $primary-bg-color;
-
+    box-shadow: $sectionbox-shadow;
     p {
         color: $info-text-color;
+        font-size: $font-size-sm;
         margin-bottom: 0;
     }
 }
+
 //Dashboard
 .dashboard-wrapper {
     background: $white;
     padding: 20px;
+    box-shadow: $sectionbox-shadow;
 
     .dash_icon {
+        display: flex;
         background-color: $dash-icon-bg;
         padding: 13px;
         color: $white;
@@ -24,27 +28,68 @@ main {
     }
 }
 
-h4,
-h5 {
-    color: $info-text-color;
+
+h5,
+h6 {
+    color: $heading-text-color;
 }
+
+//Close-btn
+.close {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 42px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 20px;
+    width: 3px;
+    background-color: #e4e9ee;
+  }
+  .close:before {
+    transform: rotate(45deg);
+  }
+  .close:after {
+    transform: rotate(-45deg);
+  }
+
 //Card
 .card-heading {
-
+    box-shadow: $card-heading-box-shadow;
     .card-info {
         span {
             color: $text-secondary-color;
+            font-size: 12px;
+        }
+        .view-text
+        {
+            font-size: $font-size-sm;
+            color: $info-text-color;
         }
     }
 }
-.card{
-    .list-group-item
-    {
-        span
+
+.card {
+    height: 400px;
+    .list-group-item {
+        .card-title
         {
+            margin-bottom:0;
+            color: $heading-text-color;
+        }
+        span {
             font-size: 12px;
             color: $text-span;
         }
     }
+    .card-icon
+    {
+        color: $card-icon-color;
+    }
 }
-

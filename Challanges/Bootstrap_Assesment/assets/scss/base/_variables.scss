@@ -1,5 +1,5 @@
 // FONTS
-$font-family: 'Poppins', sans-serif;
+$font-family-base: 'Poppins', sans-serif;
 $font-weight-normal:400;
 $font-size:16px;
 
@@ -19,26 +19,32 @@ $navbar-padding-x:0;
 $box-shadow:none;
 $border-color:none;
 
-
+//Header Input Search 
+$search-icon-color:#e0e2e4;
+$icon-color:$search-icon-color;
+$pro-text-color:#8f9bad;
+$search-placeholder-color:#aab2c3;
 
 //Profile-Wrap
 $img-wrap-border-radius:50%;
 $img-width:40px;
 $img-height:40px;
-$font-size-sm:1.5rem;
+$font-size-sm:0.75rem;
 $font-size-md:2rem;
 
 //Icon-wrap
 $icon-wrap-border-radius:$img-wrap-border-radius;
 
 //Btn
-$btn-padding-x: 0.55rem;
-$btn-padding-y: 0.10rem;
+$btn-padding-x: 0.75rem;
+$btn-padding-y: 0.30rem;
 $btn-border-radius: 2.375rem;
+$btnsuccess-box-shadow:1px 2px 15px 0px rgba(36,165,153,0.60);
 
 //Card
 $card-border-width:0;
 
+$sectionbox-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 // $background-color:(
 //     primary: (
 //     base: $primary-color,
