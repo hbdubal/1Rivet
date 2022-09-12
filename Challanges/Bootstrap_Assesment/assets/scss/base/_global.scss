@@ -8,6 +8,7 @@ html,
 body {
   height: 100%;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -17,4 +18,17 @@ body {
   background-color: $body-bg;
   color: $body-color;
   overflow: hidden;
+}
+
+
+// MEDIA QUERIES
+@media (max-width: 1200px) {
+  .card{
+  .list-group-item {
+    .btn {
+      margin-left: 0 !important;
+    }
+  }
+  margin-bottom: 30px;
+}
 }

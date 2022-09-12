@@ -16,9 +16,9 @@
 </head>
 
 <body>
-    <div class="d-flex h-100 overflow-hidden">
+    <div class="d-flex h-100 overflow-auto">
         <!-- Left-Sidebar -->
-        <aside class="aside-main d-flex flex-column overflow-hidden h-100">
+        <aside class="aside-main d-flex flex-column overflow-hidden h-100 flex-shrink-0">
             <!-- Logo -->
             <div class="logo-wrap d-flex align-items-center justify-content-center px-4">
                 <span class="fa-solid fa-heart-circle-bolt pe-3 brand-logo"></span>
@@ -81,11 +81,11 @@
                 <!-- Searchbar -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <form class="d-flex search align-items-center" role="search">
-                        <input class="form-control me-2 border-0" type="search" id="searchBar" placeholder="Search"
-                            aria-label="Search">
                         <label for="searchBar" class="searchicon">
                             <span class="fa fa-search"></span>
                         </label>
+                        <input class="form-control me-2 border-0" type="search" id="searchBar" placeholder="Search"
+                            aria-label="Search">
                     </form>
                 </div>
                 <!-- End: Searchbar -->
@@ -109,36 +109,36 @@
             <main class="d-flex flex-grow-1 px-4 py-4 h-100 overflow-hidden">
                 <div class="flex-grow-1">
                     <!-- Top-inner-content -->
-                    <div class="dashboard-content overflow-hidden">
+                    <div class="dashboard-content">
                         <div class="dash">
                             <h6 class="fw-bold">Dashboard</h6>
                             <p>Hello, Ryan! Check out what'shappening today!</p>
                         </div>
                         <div class="mt-4">
-                        <div class="dashboard-wrapper d-flex align-items-center">
-                            <div class="dash_icon align-items-center justify-content-center me-3">
-                                <span class="fa-sharp fa-solid fa-exclamation"></span>
+                            <div class="dashboard-wrapper d-flex align-items-center">
+                                <div class="dash_icon align-items-center justify-content-center me-3">
+                                    <span class="fa-sharp fa-solid fa-exclamation"></span>
+                                </div>
+                                <div class="dash_info">
+                                    <p>Thanks For joining YPC! Go ahead and
+                                        <button type="button" class="ms-3 btn btn-success">Create Now</button>
+                                    </p>
+                                </div>
+                                <a href="#" class="close"></a>
                             </div>
-                            <div class="dash_info">
-                                <p>Thanks For joining YPC! Go ahead and
-                                    <button type="button" class="ms-3 btn btn-success">Create Now</button>
-                                </p>
-                            </div>
-                            <a href="#" class="close"></a>
                         </div>
-                        </div>
-                         <div class="mt-4">
-                        <div class="dashboard-wrapper d-flex align-items-center mt-4">
-                            <div class="dash_icon align-items-center justify-content-center me-3">
-                                <span class="fa-sharp fa-solid fa-exclamation"></span>
+                        <div class="mt-4">
+                            <div class="dashboard-wrapper d-flex align-items-center mt-4">
+                                <div class="dash_icon align-items-center justify-content-center me-3">
+                                    <span class="fa-sharp fa-solid fa-exclamation"></span>
+                                </div>
+                                <div class="dash_info">
+                                    <p>You have <strong>2</strong> unread notification
+                                        <button type="button" class="ms-3 btn btn-secondary">Check Now</button>
+                                    </p>
+                                </div>
+                                <a href="#" class="close"></a>
                             </div>
-                            <div class="dash_info">
-                                <p>You have <strong>2</strong> unread notification
-                                    <button type="button" class="ms-3 btn btn-secondary">Check Now</button>
-                                </p>
-                            </div>
-                            <a href="#" class="close"></a>
-                        </div>
                         </div>
                     </div>
                     <!-- End: Top-inner-content -->
@@ -160,7 +160,8 @@
                                         <li class="list-group-item p-3">
                                             <div class="d-flex justify-content-between">
                                                 <div class="fw-normal card-title">Thomas Budiman</div>
-                                                <span class="fa-solid fa-clock card-icon fw-light"><span class="ps-2 fw-bold" style="font-size: 10px;">5Min</span></span>
+                                                <span class="fa-solid fa-clock card-icon fw-light"><span
+                                                        class="ps-2 fw-bold" style="font-size: 10px;">5Min</span></span>
                                             </div>
                                             <div class="mt-2 mb-3">
                                                 <span>24 hours Fitness, | 1050 brown street</span>
@@ -174,7 +175,9 @@
                                         <li class="list-group-item p-3">
                                             <div class="d-flex justify-content-between">
                                                 <div class="fw-normal card-title">Thomas Budiman</div>
-                                                <span class="fa-solid fa-clock card-icon fw-light"><span class="ps-2 card-text-time fw-bold" style="font-size: 10px;">5Min</span></span>
+                                                <span class="fa-solid fa-clock card-icon fw-light"><span
+                                                        class="ps-2 card-text-time fw-bold"
+                                                        style="font-size: 10px;">5Min</span></span>
                                             </div>
                                             <div class="mt-2 mb-3">
                                                 <span>24 hours Fitness, | 1050 brown street</span>
@@ -188,7 +191,9 @@
                                         <li class="list-group-item p-3">
                                             <div class="d-flex justify-content-between">
                                                 <div class="fw-normal card-title">Thomas Budiman</div>
-                                                <span class="fa-solid fa-clock card-icon fw-light"><span class="ps-2 card-text-time fw-bold" style="font-size: 10px;">5Min</span></span>
+                                                <span class="fa-solid fa-clock card-icon fw-light"><span
+                                                        class="ps-2 card-text-time fw-bold"
+                                                        style="font-size: 10px;">5Min</span></span>
                                             </div>
                                             <div class="mt-2 mb-3">
                                                 <span>24 hours Fitness, | 1050 brown street</span>
@@ -203,7 +208,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-12">
-                                <div class="card">
+                                <div class="card overflow-auto">
                                     <div class="card-heading p-3 d-flex justify-content-between">
                                         <h6 class="fw-bold"> New Brisbane Instructors - 02</h6>
                                         <div class="card-info">
@@ -216,7 +221,9 @@
                                         <li class="list-group-item p-3">
                                             <div class="d-flex justify-content-between">
                                                 <div class="fw-normal card-title">Thomas Budiman</div>
-                                                <span class="fa-solid fa-clock card-icon fw-light"><span class="ps-2 card-text-time fw-bold" style="font-size: 10px;">5Min</span></span>
+                                                <span class="fa-solid fa-clock card-icon fw-light"><span
+                                                        class="ps-2 card-text-time fw-bold"
+                                                        style="font-size: 10px;">5Min</span></span>
                                             </div>
                                             <div class="mt-2 mb-3">
                                                 <span>24 hours Fitness, | 1050 brown street</span>
@@ -230,7 +237,9 @@
                                         <li class="list-group-item p-3">
                                             <div class="d-flex justify-content-between">
                                                 <div class="fw-normal card-title">Thomas Budiman</div>
-                                                <span class="fa-solid fa-clock card-icon fw-light"><span class="ps-2 card-text-time fw-bold" style="font-size: 10px;">5Min</span></span>
+                                                <span class="fa-solid fa-clock card-icon fw-light"><span
+                                                        class="ps-2 card-text-time fw-bold"
+                                                        style="font-size: 10px;">5Min</span></span>
                                             </div>
                                             <div class="mt-2 mb-3">
                                                 <span>24 hours Fitness, | 1050 brown street</span>
@@ -244,7 +253,9 @@
                                         <li class="list-group-item p-3">
                                             <div class="d-flex justify-content-between">
                                                 <div class="fw-normal card-title">Thomas Budiman</div>
-                                                <span class="fa-solid fa-clock card-icon fw-light"><span class="ps-2 card-text-time fw-bold" style="font-size: 10px;">5Min</span></span>
+                                                <span class="fa-solid fa-clock card-icon fw-light"><span
+                                                        class="ps-2 card-text-time fw-bold"
+                                                        style="font-size: 10px;">5Min</span></span>
                                             </div>
                                             <div class="mt-2 mb-3">
                                                 <span>24 hours Fitness, | 1050 brown street</span>
