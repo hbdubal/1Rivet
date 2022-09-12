@@ -20,6 +20,10 @@ body {
 }
 
 @media (max-width: 1200px) {
+  .btn-secondary, .btn-success {
+    margin-left: 0 !important;
+    margin-top: 10px;
+  }
   .card {
     margin-bottom: 30px;
   }
@@ -8137,6 +8141,7 @@ main p {
   background: #ffffff;
   padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: relative;
 }
 .dashboard-wrapper .dash_icon {
   display: flex;

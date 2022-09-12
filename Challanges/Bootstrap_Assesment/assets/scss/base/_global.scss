@@ -23,6 +23,10 @@ body {
 
 // MEDIA QUERIES
 @media (max-width: 1200px) {
+  .btn-secondary, .btn-success{
+    margin-left: 0 !important;
+    margin-top: 10px;
+  }
   .card{
   .list-group-item {
     .btn {
