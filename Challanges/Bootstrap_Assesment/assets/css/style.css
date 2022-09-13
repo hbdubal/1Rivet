@@ -8117,14 +8117,38 @@ header input[type=search]::placeholder {
   font-size: 0.75rem;
 }
 
+.nav .nav-item {
+  position: relative;
+}
 .nav .nav-item .nav-link {
   color: #7d96a1;
   font-size: 15px;
+  transition: 0.4s all;
+  font-weight: 600;
+}
+.nav .nav-item .nav-link:after {
+  content: "";
+  position: absolute;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: auto;
+  border-left: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid transparent;
+  width: 0;
+  height: 0;
+  transition: 0.4s all;
 }
 .nav .nav-item .nav-link.active, .nav .nav-item .nav-link:hover {
   color: #22a599;
   background-color: #fafbfd;
   font-weight: 700;
+}
+.nav .nav-item .nav-link.active:after, .nav .nav-item .nav-link:hover:after {
+  border-bottom-color: #22a599;
+  border-right-color: #22a599;
 }
 
 main {

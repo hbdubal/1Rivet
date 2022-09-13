@@ -2,12 +2,12 @@
     width: $aside-flex-basis;
     box-shadow: $sectionbox-shadow;
     z-index: 5;
-    .logo-wrap
-    {
+
+    .logo-wrap {
         padding: 30px 0;
     }
-    .brand-logo
-    {
+
+    .brand-logo {
         color: $primary;
         font-size: $font-size-sm;
     }
@@ -15,14 +15,40 @@
 
 .nav {
     .nav-item {
+
+        position: relative;
+
+
         .nav-link {
             color: $info-text-color;
             font-size: 15px;
+            transition: 0.4s all;
+            font-weight: $font-weight-semibold;
+
+
+            &:after {
+                content: '';
+                @include position(absolute, $right:0, $bottom:0);
+                border-left: 10px solid transparent;
+                border-top: 10px solid transparent;
+                border-bottom: 10px solid transparent;
+                border-right: 10px solid transparent;
+                width: 0;
+                height: 0;
+                transition: 0.4s all;
+            }
+
             &.active,
             &:hover {
                 color: $nav-link-active-color;
                 background-color: rgba($nav-link-active-bg, 100);
                 font-weight: $font-weight-bold;
+
+                &:after {
+                    border-bottom-color: $primary;
+                    border-right-color: $primary;
+                }
+
             }
         }
     }

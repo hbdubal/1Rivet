@@ -1,0 +1,29 @@
+<p>form works!</p>
+
+<!-- EVENTS -->
+<button (click)="getValue('hello')">Function call</button>
+<br><br>
+<input type="text" #box (keyup)="getValue(box.value)" name="text" placeholder="Event Keyup">
+<br><br>
+<input type="text" #box1 (keydown)="getValue(box1.value)" name="text" placeholder="Event Keydown">
+<br><br>
+<input type="text" #box2 (blur)="getValue(box2.value)" name="text" placeholder="Event Blur">
+<br><br>
+<input type="text" #box3 (input)="getValue(box3.value)" name="text" placeholder="Event Input">
+<br><br>
+<h6 (mouseover)="getValue('over')">Angular Events over</h6>
+<h6 (mouseleave)="getValue('leave')">Angular Events leave</h6>
+<br><br><br>
+
+<!-- GET INPUT-BOX VALUE -->
+<h3>{{title}}</h3>
+<input type="text" #box4 (keyup)="getData(box4.value)" placeholder="Enter Name" name="name"/>
+<button (click)="getData(box4.value)">Click Me</button>
+<p>Value is: {{displayVal}}</p>
+<br><br><br>
+
+<!-- COUNTER -->
+<h3>Counter</h3>
+<button type="button" (click)="counter('add')">+</button>
+{{count}}
+<button type="button" (click)="counter('minus')">-</button>
