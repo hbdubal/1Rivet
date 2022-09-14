@@ -9,6 +9,8 @@ export class FormComponent implements OnInit {
   title = 'Angular Events and Get Value';
   displayVal:string='';
   count=0;
+  name='hiral';
+  disable=true;
 
   constructor() { }
   getValue(val:string)

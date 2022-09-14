@@ -27,3 +27,10 @@
 <button type="button" (click)="counter('add')">+</button>
 {{count}}
 <button type="button" (click)="counter('minus')">-</button>
+<br><br><br>
+
+<!-- PROPERTY BINDING -->
+<h3>Property Binding</h3>
+<input type="text" name="user-name" value={{name}} disabled={{disable}}>
+<br><br>
+<input type="text" name="user-name" [value]=name [disabled]="disable">

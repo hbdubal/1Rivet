@@ -1,0 +1,50 @@
+<!-- EVENT HANDLING PRODUCT ITEM -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="text-info">Event Handling Product Item</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, sequi nemo at labore adipisci
+                    cumque inventore in architecto velit! Culpa, ea amet reiciendis eos facilis maiores nam magni
+                    possimus eius!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <table class="table table-hover text-center table-striped">
+                    <thead class="bg-secondary text-white">
+                        <tr>
+                            <th>Sno</th>
+                            <th>Image</th>
+                            <th>Name</th>
+                            <th>Qty</th>
+                            <th>Price</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>{{product.sno}}</td>
+                            <td>
+                                <img [src]="product.image" alt="" width="50" height="50">
+                            </td>
+                            <td>{{product.name}}</td>
+                            <td>
+                                <span (click)="decrementQty()" class="fa fa-minus-square"></span>
+                                {{product.qty}}
+                                <span (click)="incrementQty()" class="fa fa-plus-square"></span>
+                            </td>
+                            <td>{{product.price}}</td>
+                            <td>{{product.qty * product.price}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
