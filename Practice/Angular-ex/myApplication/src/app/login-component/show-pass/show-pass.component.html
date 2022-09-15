@@ -1,0 +1,19 @@
+<section class="mt-5 mb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card shadow-lg">
+                    <div class="card-header bg-secondary text-white">
+                        <h3 class="ps-3">{{title}}</h3>
+                    </div>
+                    <div class="card-body bg-light">
+                    </div>
+                    <form>
+                        <input [type]="inputType" name="" class="form-control" placeholder="Password">
+                        <input (change)="showPass($event)" type="checkbox" class="form-check-input">Show Password
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

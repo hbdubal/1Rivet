@@ -1,0 +1,23 @@
+<section class="mt-5 mb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card shadow-lg">
+                    <div class="card-header bg-warning text-white">
+                        <h3 class="ps-3">{{title}}</h3>
+                    </div>
+                    <div class="card-body bg-light">
+                       <form>
+                        <textarea class="form-control" rows="4" name="message" [(ngModel)]="myTextarea" [maxlength]="maxChar"></textarea>
+                       </form>
+                    </div>
+                    <div class="card-footer">
+                        <h4>The Character Remaining:
+                            <span class="fw-bold">{{myTextarea.length}}/{{maxChar}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
