@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,6 +9,10 @@ import { ShoppingcartComponent } from './components/shoppingcart/shoppingcart.co
 import { SwitccaseExampleComponent } from './components/switccase-example/switccase-example.component'
 import { BeveragesComponent } from './beverages/beverages.component';
 import { BeveragesChildComponent } from './beverages-child/beverages-child.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './parent/child/child.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,10 +21,13 @@ import { BeveragesChildComponent } from './beverages-child/beverages-child.compo
     SwitccaseExampleComponent,
     BeveragesComponent,
     BeveragesChildComponent,
+    ParentComponent,
+    ChildComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
