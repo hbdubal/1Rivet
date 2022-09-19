@@ -1,1 +1,52 @@
-<p>binding works!</p>
+<!-- <p>shopping-cart works!</p> -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="text-info">Shopping Cart</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, sequi nemo at labore adipisci
+                    cumque inventore in architecto velit! Culpa, ea amet reiciendis eos facilis maiores nam magni
+                    possimus eius!</p>
+            </div>
+        </div>
+    </div>
+</section> 
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <table class="table table-hover text-center table-striped">
+                    <thead class="bg-secondary text-white">
+                        <tr>
+                            <th>Sno</th>
+                            <th>Image</th>
+                            <th>Name</th>
+                            <th>Qty</th>
+                            <th>Price</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let product of products">
+                            <td>{{product.sno}}</td>
+                            <td><img [src]="product.image" alt="" width="70" height="70"></td>
+                            <td>{{product.name}}</td>
+                            <td>{{product.price | currency: 'INR'}}</td>
+                            <td><span (click)="decrQty(product.sno)" class="fa fa-minus-square"></span>
+                                {{product.qty}}
+                                <span (click)="incrQty(product.sno)" class="fa fa-plus-square"></span>
+                            </td>
+                            <td>{{product.price * product.qty | currency: 'INR'}}</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"></td>
+                            <td>Grand Total</td>
+                            <td>{{calcGrandTotal() | currency: 'INR' }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>

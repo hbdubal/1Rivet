@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SwitccaseExampleComponent implements OnInit {
 title='Switch Case';
-color="black";
+color="yellow";
   constructor() { }
 
   ngOnInit(): void {

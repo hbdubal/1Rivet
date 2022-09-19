@@ -1,0 +1,64 @@
+<section class="mt-5 mb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card shadow-lg">
+                    <div class="card-header bg-warning text-white">
+                        <h3 class="ps-3">{{title}}</h3>
+                    </div>
+                    <div class="card-body bg-light">
+                       <form>
+                        <textarea class="form-control" rows="4" name="message" [(ngModel)]="myTextarea" [maxlength]="maxChar"></textarea>
+                       </form>
+                    </div>
+                    <div class="card-footer">
+                        <h4>The Character Remaining:
+                            <span class="fw-bold">{{myTextarea.length}}/{{maxChar}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- COUNTER -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card shadow-lg">
+                    <div class="header bg-success">
+                        <h3 class="ps-3">Counter</h3>
+                    </div>
+                    <div class="card-body">
+                        <h4>{{count}}</h4>
+                        <button (click)="increment()" class="btn btn-danger btn-sm me-3">Increment</button>
+                        <button (click)="decrement()" class="btn btn-success btn-sm">Dicrement</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Function With Parameter -->
+<section class="mt-5 mb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card shadow-lg">
+                    <div class="header bg-warning text-white">
+                        <h3 class="ps-3">Wish Message</h3>
+                    </div>
+                    <div class="card-body">
+                        <h4>{{message}}</h4>
+                        <button (click)="updateMsg('Good Morning')"class="btn btn-danger btn-sm me-3">Good Morning</button>
+                        <button (click)="updateMsg('Good Afternoon')" class="btn btn-success btn-sm me-3">Good Afternoon</button>
+                        <button (click)="updateMsg('Good Evening')" class="btn btn-primary btn-sm">Good Evening</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

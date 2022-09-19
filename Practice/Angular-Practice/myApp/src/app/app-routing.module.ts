@@ -3,11 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { BindingComponent } from './binding/binding.component';
-import { CommunicationComponent } from './communication/communication.component';
 import { ConditionComponent } from './condition/condition.component';
 import { PipesComponent } from './condition/pipes/pipes.component';
 import { Pipes2Component } from './condition/pipes2/pipes2.component';
-
+import { ParentCommunicationComponent } from './communication/parent-communication/parent-communication.component';
 const routes: Routes = [
   {
     path: 'home',
@@ -19,11 +18,26 @@ const routes: Routes = [
   },
   {
     path: 'communication',
-    component: CommunicationComponent
+    component: ParentCommunicationComponent
+  },
+  {
+    path: ' ',
+    pathMatch: "full",
+    redirectTo: "home"
   },
   {
    path:'condition',
-   component:ConditionComponent
+   component:ConditionComponent,
+   children: [
+    {
+      path: 'pipe',
+      component: PipesComponent
+    },
+    {
+      path: 'pipes2',
+      component: Pipes2Component
+    },
+  ]
   },
 ];
 

@@ -1,6 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -10,22 +9,23 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Communication</a>
+          <a class="nav-link" href="#" routerLink="communication">Communication</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Binding</a>
+          <a class="nav-link" href="#" routerLink="binding">Binding</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Dropdown link
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Condition</a></li>
-            <li><a class="dropdown-item" href="#">Pipes</a></li>
-            <li><a class="dropdown-item" href="#">Directives</a></li>
+            <li><a class="dropdown-item" href="#" routerLink="condition">Condition</a></li>
+            <li><a class="dropdown-item" href="#" routerLink="condition/pipe">Pipes</a></li>
+            <li><a class="dropdown-item" href="#" routerLink="condition/pipes2">Directives</a></li>
           </ul>
         </li>
       </ul>
     </div>
   </div>
 </nav>
+<router-outlet></router-outlet>
