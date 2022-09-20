@@ -1,0 +1,17 @@
+<section>
+    <div class="container-fluid">
+        <h2>{{title}}</h2>
+
+        <!-- Attribute Structure -->
+
+        <!-- ngClass Structure -->
+        <h3 [ngClass]="isspecial?className:''" class="fw-bold mt-3">Testing with ngClass</h3>
+
+        <!-- ngStyle Structure -->
+        <h3 [ngStyle]="style" class="fw-normal mt-3">Testing with ngStyle</h3>
+
+        <!-- ngModel Structure -->
+        <h3 class="fw-bolder mt-3 text-primary">Testing with ngModel</h3>
+        <input (change)="dataChange()" type="text" [(ngModel)]="inputValue" />
+    </div>
+</section>

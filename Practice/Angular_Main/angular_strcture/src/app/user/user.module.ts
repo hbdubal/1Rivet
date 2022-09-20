@@ -7,6 +7,8 @@ import { BindingComponent } from './binding/binding.component';
 import { ConditionComponent } from './condition/condition.component';
 import { FormsModule } from '@angular/forms';
 import { PipesComponent } from './pipes/pipes.component';
+import { DirectivesComponent } from './directives/directives.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -15,6 +17,8 @@ import { PipesComponent } from './pipes/pipes.component';
     BindingComponent,
     ConditionComponent,
     PipesComponent,
+    DirectivesComponent,
+    HomeComponent,
   ],
   imports: [
     CommonModule,
@@ -23,7 +27,9 @@ import { PipesComponent } from './pipes/pipes.component';
   ],
   exports:[
     BindingComponent,
-    ConditionComponent
+    ConditionComponent,
+    PipesComponent,
+    DirectivesComponent
   ]
 })
 export class UserModule { }

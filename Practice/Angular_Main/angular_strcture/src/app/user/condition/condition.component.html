@@ -1,1 +1,29 @@
-<p>condition works!</p>
+<!-- NGIF CONDITION -->
+<section class="mt-3">
+    <div class="container-fluid">
+        <h5 class="text-primary">ngIf Condtion</h5>
+        <h2 *ngIf="isspecial" class="text-secondary">{{title}}</h2><br>
+
+        <!-- NGFOR CONDITION -->
+        <h5 class="text-primary">ngFor Condtion</h5>
+        <ul>
+            <li *ngFor="let item of country" class="text-secondary">
+                {{item}}
+            </li>
+        </ul><br>
+
+        <!-- NGSWITCH CONDITION -->
+        <h5 class="text-primary">ngSwitch Condtion</h5>
+        <ul *ngFor="let item of people" [ngSwitch]="item.country">
+            <li *ngSwitchCase='"UK"' class="text-success">
+                {{item.name}}{{item.country}}
+            </li>
+            <li *ngSwitchCase='"India"' class="text-warning">
+                {{item.name}}{{item.country}}
+            </li>
+            <li *ngSwitchDefault class="text-info">
+                {{item.name}}{{item.country}}
+            </li>
+        </ul>
+    </div>
+</section>

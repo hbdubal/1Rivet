@@ -1,0 +1,25 @@
+<section class="mt-5">
+    <div class="container-fluid">
+        <table class="table-bordered" width="500px">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                    <th>Edit</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let customer of customerDetails">
+                    <td>{{customer.id}}</td>
+                    <td>{{customer.name}}</td>
+                    <td>{{customer.age}}</td>
+                    <td>{{customer.city}}</td>
+                    <td><button [routerLink]="['../edit', customer.id]">Edit</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <button (click)="add()" routerLink='../add' class="text-center">Add</button>
+    </div>
+</section>

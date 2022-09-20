@@ -1,0 +1,35 @@
+<section>
+    <div class="container-fluid">
+        <h1 class="text-info">Reactive Form</h1>
+        <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+            <div class="my-3">
+                <label for="">Name:</label>
+                <input type="text" name="" class="form-control" formControlName="name" />
+                <div *ngIf="signUpForm.get('name')?.touched">
+                    <span class="text-danger" *ngIf="signUpForm.get('name')?.errors?.['required']">Please Enter Name*</span>
+                </div>
+
+            </div>
+            <div class="my-3">
+                <label for="">Email:</label>
+                <input type="text" name="" class="form-control" formControlName="email" />
+                <!-- <div *ngIf="emailError">
+                    {{emailError}}
+                </div> -->
+                <div *ngIf="signUpForm.get('email')?.touched">
+                    <span class="text-danger" *ngIf="signUpForm.get('email')?.errors?.['required']">Please Enter Email*</span>
+                    <span class="text-danger" *ngIf="signUpForm.get('email')?.errors?.['email']">Please Enter Valid Email*</span>
+                </div>
+            </div>
+            <div class="my-3" formArrayName="hobbies">
+                <button class="btn btn-secondary" (click)="onAddHobby()">Add Hobby</button>
+                <div class="my-3" *ngFor="let hobby of hobbiesControl.controls; let i=index">
+                    <input type="text" name="" class="form-control" [formControlName]="i" />
+                </div>
+            </div>
+            <div class="my-3">
+                <button type="submit" class="btn btn-primary">Add</button>
+            </div>
+        </form>
+    </div>
+</section>
