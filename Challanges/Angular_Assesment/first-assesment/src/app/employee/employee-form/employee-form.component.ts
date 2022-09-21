@@ -20,8 +20,8 @@ export class EmployeeFormComponent implements OnInit {
   ngOnInit(): void {
     this.signUpForm = this.fb.group(
       {
-        name: ['', [Validators.required], [Validators.minLength(7), Validators.pattern('[a-zA-Z]*')]],
-        gender: ['', [Validators.required], Validators.pattern('[ a-zA-Z]*')],
+        name: ['', [Validators.required, Validators.minLength(7), Validators.pattern('[a-zA-Z]*')]],
+        gender: ['', [Validators.required, Validators.pattern('[ a-zA-Z]*')]],
         salary: ['', [Validators.required]],
         dob: ['', [Validators.required, Validators.pattern('[0-9]*')]],
       }
@@ -30,14 +30,9 @@ export class EmployeeFormComponent implements OnInit {
   }
   onSubmit() {
     this.isSubmitted = true;
-    this.employee.push(
-      {
-        name: this.signUpForm.controls['name'].value,
-        gender: this.signUpForm.controls['gender'].value,
-        dob: this.signUpForm.controls['dob'].value,
-        salary: this.signUpForm.controls['salary'].value
-      }
-    )
+    this.employee.push(this.signUpForm.value);
+      
+    
     console.log(this.employee);
   }
   onSave(){
@@ -54,7 +49,7 @@ export class EmployeeFormComponent implements OnInit {
   editEmployee(employee:any)
   {
     console.log(employee);
-    console.log(this.employee.indexOf(employee));
+    // console.log(this.employee(employee));
     this.signUpForm.patchValue(employee);
   }
 

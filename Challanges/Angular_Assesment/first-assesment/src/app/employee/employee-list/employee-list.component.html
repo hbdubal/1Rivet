@@ -15,7 +15,7 @@
                   <td>{{employee.dob | date: 'dd/MM/YY'}}</td>
                   <td>{{employee.salary | currency:'INR'}}</td>
                   <td>
-                    <button class="btn btn-info">details</button>
+                    <button class="btn btn-info" routerLink="../employee-details" [queryParams]="employee">details</button>
                     <button class="btn btn-warning" (click)="editEmployee(employee)">edit</button>
                     <button class="btn btn-danger" (click)="onDeleteTask(employee)">delete</button>
                   </td>
