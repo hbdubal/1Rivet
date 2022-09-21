@@ -1,0 +1,57 @@
+<section>
+    <div class="container-fluid">
+        <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+            <div class="my-3">
+                <label for="">Name:</label>
+                <input type="text" name="" class="form-control" formControlName="name" />
+                <!-- <div *ngIf="signUpForm.controls.name.invalid && (signUpForm.controls.name.touched || signUpForm.controls.name.dirty)">
+                    <p *ngIf="signUpForm.controls.name.errors?.req">
+                        name is requried.
+                    </p>
+                </div> -->
+                <div *ngIf="signUpForm.get('name')?.invalid && (isSubmitted || signUpForm.get('name')?.touched || signUpForm.get('name')?.dirty)">
+                    <span class="text-danger" *ngIf="signUpForm.get('name')?.errors?.['required']">Please Enter
+                        Name*</span>
+                    <span class="text-danger" *ngIf="signUpForm.get('name')?.errors?.['minLength']">Name should be
+                        minimum 7 length char*</span>
+                    <span class="text-danger" *ngIf="signUpForm.get('name')?.errors?.['pattern']">Name should be
+                        alphabet*</span>
+                </div>
+            </div>
+
+            <div class="my-3">
+                <label for="">Gender:</label>
+                <input type="text" name="" class="form-control" formControlName="gender" />
+                <div *ngIf="signUpForm.get('gender')?.invalid && (isSubmitted || signUpForm.get('gender')?.touched || signUpForm.get('gender')?.dirty)">
+                    <span class="text-danger" *ngIf="signUpForm.get('gender')?.errors?.['required']">Please Enter
+                        gender*</span>
+                    <span class="text-danger" *ngIf="signUpForm.get('gender')?.errors?.['minLength']">Gender should be
+                        alphabet</span>
+                </div>
+            </div>
+            <div class="my-3">
+                <label for="">Dob:</label>
+                <input type="text" name="" class="form-control" formControlName="dob" />
+                <div *ngIf="signUpForm.get('dob')?.invalid && (isSubmitted || signUpForm.get('dob')?.touched || signUpForm.get('dob')?.dirty)">
+                    <span class="text-danger" *ngIf="signUpForm.get('dob')?.errors?.['required']">Please Enter
+                        dob*</span>
+                    <!-- <span class="text-danger" *ngIf="signUpForm.get('dob')?.errors?.['pattern']">Dob should be a only number</span> -->
+                </div>
+            </div>
+            <div class="my-3">
+                <label for="">Salary:</label>
+                <input type="text" name="" class="form-control" formControlName="salary" />
+                <div *ngIf="signUpForm.get('salary')?.invalid && (isSubmitted || signUpForm.get('salary')?.touched || signUpForm.get('salary')?.dirty)">
+                    <span class="text-danger" *ngIf="signUpForm.get('salary')?.errors?.['required']">Please Enter
+                        Salary*</span>
+                    <span class="text-danger" *ngIf="signUpForm.get('gender')?.errors?.['pattern']">Salary should be a number</span>
+                </div>
+            </div>
+            <div class="my-3">
+                <button type="button" (click)="onReset()" class="btn btn-primary me-4">Reset</button>
+                <button type="submit" (click)="onSave()" class="btn btn-secondary">Save</button>
+            </div>
+        </form>
+    </div>
+</section>
+<app-employee-list [employeelist]="employee" (editDetails)="editEmployee($event)"></app-employee-list>

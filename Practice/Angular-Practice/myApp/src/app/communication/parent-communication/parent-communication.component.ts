@@ -22,4 +22,4 @@ export class ParentCommunicationComponent implements OnInit {
   public addChildData(val:string){
     console.log('Parent', val);
   }
-}
+}+

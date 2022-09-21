@@ -2,6 +2,7 @@ import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { ReactiveformsComponent } from './reactiveforms/reactiveforms.component';
 
 const routes: Routes = [
   {
@@ -20,6 +21,10 @@ const routes: Routes = [
   {
     path: 'form',
     component: ReactiveFormComponent,
+  },
+  {
+    path: 'reactiveform',
+    component: ReactiveformsComponent,
   },
   {
     path: '**',
