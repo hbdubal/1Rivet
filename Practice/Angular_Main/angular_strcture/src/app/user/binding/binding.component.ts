@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-binding',
@@ -16,7 +17,20 @@ export class BindingComponent implements OnInit {
   public count: number = 30;
 
   public message:string='Hello';
+
+  userData:any={};
+  // public display:false;
+  getData(data:NgForm)
+  {
+    console.warn(data)
+    this.userData=data
+  }
   
+  // toggle()
+  // {
+
+  //   this.display=!this.display;
+  // }
   constructor() { }
 
   ngOnInit(): void {

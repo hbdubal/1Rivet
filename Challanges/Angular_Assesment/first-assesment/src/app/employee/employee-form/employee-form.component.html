@@ -31,7 +31,7 @@
             </div>
             <div class="my-3">
                 <label for="">Dob:</label>
-                <input type="text" name="" class="form-control" formControlName="dob" />
+                <input type="date" name="" class="form-control" formControlName="dob" />
                 <div *ngIf="signUpForm.get('dob')?.invalid && (isSubmitted || signUpForm.get('dob')?.touched || signUpForm.get('dob')?.dirty)">
                     <span class="text-danger" *ngIf="signUpForm.get('dob')?.errors?.['required']">Please Enter
                         dob*</span>

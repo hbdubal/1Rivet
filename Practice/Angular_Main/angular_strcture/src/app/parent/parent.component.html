@@ -1,0 +1,25 @@
+<!-- <section class="mt-3">
+    <div class="container-fluid">
+        <input type="text">
+        <button (click)="updateData()">Update parent to Child Component</button>
+        <app-child [item]="data" (editDataEvent)="editData($event)"></app-child>
+        {{datalist}}
+    </div>
+</section><br><br> -->
+
+<!-- PARENT TO CHILD -->
+<section class="mt-3">
+    <div class="container-fluid">
+        <div class="form-group">
+            <h4 class="text-info">Add User</h4>
+            <label for="">UserName:</label>
+            <input type="text" name="" class="form-control" [(ngModel)]="username"/>
+            <div class="mt-3">
+                <button class="btn btn-primary" (click)="onUserAdd()">Add User</button>
+            </div>
+            <app-child *ngFor="let user of userList" [username]="user"></app-child>
+        </div>
+        
+    </div>
+</section>
+<router-outlet></router-outlet>

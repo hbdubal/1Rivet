@@ -12,7 +12,7 @@
                 <tr *ngFor="let employee of employeelist">
                   <td>{{employee.name}}</td>
                   <td>{{employee.gender | uppercase}}</td>
-                  <td>{{employee.dob | date: 'dd/MM/YY'}}</td>
+                  <td>{{employee.dob | date:'shortDate'}}</td>
                   <td>{{employee.salary | currency:'INR'}}</td>
                   <td>
                     <button class="btn btn-info" routerLink="../employee-details" [queryParams]="employee">details</button>

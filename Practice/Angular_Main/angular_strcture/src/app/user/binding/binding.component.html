@@ -62,3 +62,30 @@
         </div>
     </div>
 </section>
+
+<!-- BASIC FORM -->
+<section class="mt-5 mb-5">
+    <div class="container-fluid">
+        <h3 class="text-info">Basic Form</h3>
+        <form #basicform="ngForm" (submit)="getData(basicform.value)">
+            <input type="text" ngModel name="user" placeholder="Enter Username"><br><br>
+            <input type="text" ngModel name="email" placeholder="Enter Email"><br><br>
+            <input type="text" ngModel name="password"  placeholder="Enter Password"><br><br>
+            <button>Register</button>
+        </form>
+        <ul>
+            <li>{{userData.user}}</li>
+            <li>{{userData.email}}</li>
+            <li>{{userData.password}}</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Toogle Element -->
+<section class="mt-5 mb-5">
+    <div class="container-fluid">
+        <h3 class="text-info">Toogle Element</h3>
+        <!-- <button (click)="toggle()">Toggle</button>
+        <h5 *ngIf="display">Hello there<h5> -->
+    </div>
+</section>

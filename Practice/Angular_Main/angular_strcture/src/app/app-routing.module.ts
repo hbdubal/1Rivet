@@ -1,8 +1,10 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ParentComponent } from './parent/parent.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { ReactiveformsComponent } from './reactiveforms/reactiveforms.component';
+import { NgForm } from '@angular/forms';
 
 const routes: Routes = [
   {
@@ -25,6 +27,10 @@ const routes: Routes = [
   {
     path: 'reactiveform',
     component: ReactiveformsComponent,
+  },
+  {
+    path: 'communication',
+    component: ParentComponent,
   },
   {
     path: '**',

@@ -12,12 +12,12 @@ export class ReactiveformsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.signUpForm=new FormGroup(
-      {
-        'username':new FormControl(null),
-        'email':new FormControl(null)
-      }
-    )
+    // this.signUpForm=new FormGroup(
+    //   {
+    //     'username':new FormControl(null),
+    //     'email':new FormControl(null)
+    //   }
+    // )
   }
 
 }
