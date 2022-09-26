@@ -6,9 +6,25 @@ import { Injectable } from '@angular/core';
 export class DesignutilityService {
 
   constructor() { }
-  messageAlert()
-  {
+  messageAlert() {
     alert("thanks for watching")
   }
-  product="Laptop"
+  product = [
+    {
+      name: "Laptop",
+      id: "001"
+    },
+    {
+      name: "Mobile",
+      id: "002"
+    },
+    {
+      name: "Tv",
+      id: "003"
+    },
+    {
+      name: "Machine",
+      id: "004"
+    }
+  ]
 }

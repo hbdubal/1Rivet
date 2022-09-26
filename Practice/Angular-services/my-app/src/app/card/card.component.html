@@ -1,10 +1,14 @@
 <section>
     <div class="container-fluid">
-        <div class="card text-center">
-            <div class="card-body">
-              <h5 class="card-title">{{product}}</h5>
+        <div class="card">
+            <div class="card-body text-left">
+              <ng-container *ngFor="let product of products">
+              Product Name:<strong class="text-info">{{product.name}}</strong>&nbsp;&nbsp;
+              Product Id:<strong class="text-info">{{product.id}}</strong><br><br>
+            </ng-container>
+              <!-- <h5 class="card-title">{{product}}</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <button (click)="btnClick()" class="btn btn-primary">Newsletter Subscribe</button>
+              <button (click)="btnClick()" class="btn btn-primary">Newsletter Subscribe</button> -->
             </div>
           </div>
     </div>

@@ -10,10 +10,10 @@ import { DesignutilityService } from '../services/designutility.service';
 export class CardComponent implements OnInit {
 
   constructor(private _msgService:DesignutilityService) { }
-  product="test";
+  products:any='';
 
   ngOnInit(): void {
-    this.product=this._msgService.product;
+    this.products=this._msgService.product;
   }
   btnClick()
   {

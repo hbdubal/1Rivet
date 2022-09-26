@@ -14,7 +14,7 @@ export class Card2Component implements OnInit {
   product="test";
 
   ngOnInit(): void {
-    this.product=this._msgService.product;
+    // this.product=this._msgService.product.name;
   }
   btnClick()
   {
