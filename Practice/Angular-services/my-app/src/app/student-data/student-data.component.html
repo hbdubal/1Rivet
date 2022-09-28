@@ -1,0 +1,30 @@
+<section class="page-area">
+    <div class="container-fluid">
+        <h2>Students-list</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id non laborum explicabo ullam quibusdam voluptatem,
+            iste quos dolorum? Optio, quos!</p>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Branch</th>
+                    <th>DOB</th>
+                    <th>Gender</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let student of students">
+                    <td>{{student.ID}}</td>
+                    <td>{{student.FirstName}}</td>
+                    <td>{{student.LastName}}</td>
+                    <td>{{student.Branch}}</td>
+                    <td>{{student.DOB}}</td>
+                    <td>{{student.Gender}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+

@@ -13,7 +13,9 @@ export class CardComponent implements OnInit {
   products:any='';
 
   ngOnInit(): void {
-    this.products=this._msgService.product;
+    // this.products=this._msgService.product;
+    this._msgService.product()
+    .subscribe(productData =>this.products=productData)
   }
   btnClick()
   {

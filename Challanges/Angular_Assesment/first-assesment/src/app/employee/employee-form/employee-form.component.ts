@@ -29,7 +29,7 @@ export class EmployeeFormComponent implements OnInit {
 
   }
   onSubmit() {
-    this.isSubmitted = true;
+    this.isSubmitted = true;  
     this.employee.push(this.signUpForm.value);
       
     
@@ -46,6 +46,11 @@ export class EmployeeFormComponent implements OnInit {
   onReset() {
       this.signUpForm.reset();
   }
+  /**
+   * @event 
+   * @desc for submitting data
+   * @param employee 
+   */
   editEmployee(employee:any)
   {
     console.log(employee);

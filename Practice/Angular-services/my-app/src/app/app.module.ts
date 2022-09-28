@@ -11,7 +11,10 @@ import { Card2Component } from './card2/card2.component';
 import { ContactComponent } from './contact/contact.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HomeComponent } from './home/home.component';
-import { DesignutilityService } from './services/designutility.service';
+import { StudentComponent } from './student/student.component';
+import { StudentDataComponent } from './student-data/student-data.component';
+import { StudentService } from './services/student.service';
+// import { DesignutilityService } from './services/designutility.service';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,9 @@ import { DesignutilityService } from './services/designutility.service';
     Card2Component,
     ContactComponent,
     PageNotFoundComponent,
-    HomeComponent
+    HomeComponent,
+    StudentComponent,
+    StudentDataComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +34,7 @@ import { DesignutilityService } from './services/designutility.service';
     CoreModule,
     HttpClientModule
   ],
-  providers: [DesignutilityService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  providers:[StudentService]
 })
 export class AppModule { }
