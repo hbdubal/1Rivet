@@ -2,17 +2,23 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-              <form>
+                <form [formGroup]="postForm">
                 <div class="form-group">
-                    <label for="">Title</label>
-                    <input type="text" class="form-control">
+                    <label for="">Name</label>
+                    <input type="text" class="form-control" formControlName="name">
+                    <div *ngIf="postForm.get('name')?.valid && postForm.get('name')?.touched">
+                        Name is required
+                    </div>
                 </div>
                 <div class="form-group">
                     <label for="">Content</label>
-                    <textarea class="form-control"></textarea>
+                    <textarea class="form-control" formControlName="content"></textarea>
+                    <div class="" *ngIf="postForm.get('content')?.valid && postForm.get('content')?.touched">
+                        content is required
+                    </div>
                 </div>
                 <div class="my-2">
-                    <button type="submit" class="btn btn-primary"></button>
+                    <button type="submit" class="btn btn-primary">Add Post</button>
                 </div>
               </form>
             </div>

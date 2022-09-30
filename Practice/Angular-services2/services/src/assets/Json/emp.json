@@ -1,0 +1,13 @@
+{
+    "employee": [
+        {
+            "firstname": "Hiral",
+            "lastname": "Dubal",
+            "email": "hiraldubal@gmail.com",
+            "gender": "female",
+            "dob": "02/11/1996",
+            "salary": "20000",
+            "id": 1
+        }
+    ]
+}
