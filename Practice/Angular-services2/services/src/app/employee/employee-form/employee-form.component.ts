@@ -8,8 +8,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class EmployeeFormComponent implements OnInit {
   public signUpForm: FormGroup;
-  // isSubmitted: boolean = false;
-  // public employee: any = [];
+  isSubmitted: boolean = false;
+  public employee: any = [];
   
   constructor(private fb: FormBuilder) {
     this.signUpForm = new FormGroup('');
@@ -17,7 +17,7 @@ export class EmployeeFormComponent implements OnInit {
   ngOnInit(): void {
     this.signUpForm = this.fb.group(
       {
-        firstname: ['', [Validators.required, Validators.minLength(8), Validators.pattern('[a-zA-Z]*')]],
+        firstname: ['',[Validators.required, Validators.minLength(5), Validators.pattern('[a-zA-z]*')]],
         lastname: ['', [Validators.required, Validators.minLength(7), Validators.pattern('[a-zA-Z]*')]],
         email: ['', [Validators.required,Validators.email]],
         gender: ['female', [Validators.required]],
@@ -25,10 +25,15 @@ export class EmployeeFormComponent implements OnInit {
         salary: ['', [Validators.required]],
       })
      }
+   
      onSave()
      {
       console.log(this.signUpForm.value);
-      
+      if(this.signUpForm.valid)
+      {
+        this.employee.push(this.signUpForm.value)
+        this.isSubmitted=false;
+      }
      }
      onReset() {
       this.signUpForm.reset();

@@ -6,7 +6,7 @@
                 <input type="text" class="form-control" formControlName="firstname" required/>
                 <div *ngIf="signUpForm.get('firstname')?.invalid && (signUpForm.get('firstname')?.dirty || signUpForm.get('firstname')?.touched)" >
                     <span class="text-danger" *ngIf="signUpForm.get('firstname')?.errors?.['required']">*Please Enter firstname*</span>
-                    <span class="text-danger" *ngIf="signUpForm.get('firstname')?.errors?.['minLength']">*Name should be minimum 7 length character*</span>
+                    <span class="text-danger" *ngIf="signUpForm.get('firstname')?.hasError('minLength')">*Name should be minimum 7 length character*</span>
                   </div>
             </div>
 
