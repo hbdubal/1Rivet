@@ -1,0 +1,45 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Headphone-1",
+            "category-id": 2,
+            "description": "Product Description",
+            "price": 5000,
+            "is-available": true,
+            "rating": 4,
+            "reviews": 120,
+            "vendor_name": "seller-1",
+            "warrenty": 2
+        },
+        {
+            "id": 2,
+            "name": "Headphone-2",
+            "category-id": 2,
+            "description": "Product Description",
+            "price": 3000,
+            "is-available": true,
+            "rating": 3,
+            "reviews": 120,
+            "vendor_name": "seller-1",
+            "warrenty": 1
+        }
+    ],
+    "posts": [
+        {
+            "id": 1,
+            "title": "json-server",
+            "author": "typeicode"
+        }
+    ],
+    "comments": [
+        {
+            "id": 1,
+            "body": "some-content",
+            "postid": 1
+        }
+    ],
+    "profile": {
+        "name": "typeicode"
+    }
+}

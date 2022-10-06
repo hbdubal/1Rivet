@@ -18,6 +18,11 @@ import { EmpaddComponent } from './empadd/empadd.component';
   imports: [
     CommonModule,
     EmployeeRoutingModule
+  ],
+  exports:[
+    EmployeeFormComponent,
+    EmployeeListComponent,
+    EmpaddComponent
   ]
 })
 export class EmployeeModule { }
