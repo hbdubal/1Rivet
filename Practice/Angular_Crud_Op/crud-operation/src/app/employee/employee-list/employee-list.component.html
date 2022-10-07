@@ -1,0 +1,31 @@
+<section>
+    <div class="container-fluid">
+        <table class="table table-bordered">
+            <thead>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>gender</th>
+                <th>dob</th>
+                <th>salary</th>
+                <th>Action</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let employee of emp">
+                    <td>{{employee.firstname}}</td>
+                    <td>{{employee.lastname}}</td>
+                    <td>{{employee.email}}</td>
+                    <td>{{employee.dob | date:'shortDate'}}</td>
+                    <td>{{employee.gender | uppercase}}</td>
+                    <td>{{employee.salary | currency:'INR'}}</td>
+                    <td>
+                        <button class="btn btn-info me-3" (click)="onDetails(employee.id)">details</button>
+                        <button class="btn btn-warning me-3">edit</button>
+                        <button class="btn btn-danger">delete</button>
+                    </td>
+                </tr>
+                <tr>
+            </tbody>
+        </table>
+    </div>
+</section>

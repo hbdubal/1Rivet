@@ -1,0 +1,86 @@
+<section>
+    <div class="container-fluid">
+        <!--Start: Reactive Form -->
+        <form [formGroup]="empForm">
+            <div class="my-3">
+                <label for="">First Name:</label>
+                <input type="text" name="" class="form-control" formControlName="firstname" />
+                <div
+                    *ngIf="empForm.get('firstname')?.invalid && (isSubmitted || empForm.get('firstname')?.touched || empForm.get('firstname')?.dirty)">
+                    <span class="text-danger" *ngIf="empForm.get('firstname')?.errors?.['required']">Please Enter
+                        FirstName*</span>
+                    <span class="text-danger" *ngIf="empForm.get('firstname')?.errors?.['minlength']">Name should be
+                        minimum 5 length char*</span>
+                    <span class="text-danger" *ngIf="empForm.get('firstname')?.errors?.['pattern']">Name should be in
+                        only char*</span>
+                </div>
+            </div>
+            <div class="my-3">
+                <label for="">Last Name:</label>
+                <input type="text" name="" class="form-control" formControlName="lastname" />
+                <div
+                    *ngIf="empForm.get('lastname')?.invalid && (isSubmitted || empForm.get('lastname')?.touched || empForm.get('lastname')?.dirty)">
+                    <span class="text-danger" *ngIf="empForm.get('lastname')?.errors?.['required']">Please Enter
+                        LastName*</span>
+                    <span class="text-danger" *ngIf="empForm.get('lastname')?.errors?.['minlength']">Name should be
+                        minimum 5 length char*</span>
+                    <span class="text-danger" *ngIf="empForm.get('lastname')?.errors?.['pattern']">Name should be in
+                        only char*</span>
+                </div>
+            </div>
+            <div class="my-3">
+                <label for="">Email:</label>
+                <input type="text" name="" class="form-control" formControlName="email" />
+                <div
+                    *ngIf="empForm.get('email')?.invalid && (isSubmitted || empForm.get('email')?.touched || empForm.get('email')?.dirty)">
+                    <span class="text-danger" *ngIf="empForm.get('email')?.errors?.['required']">Please Enter
+                        Email*</span>
+                </div>
+            </div>
+            <div class="my-3">
+                <label for="gender">Gender:</label>
+                <input type="text" name="" class="form-control" formControlName="gender" />
+                <!-- <div>
+                    <input id="male" type="radio" value="male" name="gender" formControlName="gender">
+                    <label for="male">Male</label>
+                </div>
+
+                <div>
+                    <input id="female" type="radio" value="female" name="gender" formControlName="gender">
+                    <label for="female">Female</label>
+                </div>
+                <div
+                    *ngIf="empForm.get('gender')?.invalid && (isSubmitted || empForm.get('gender')?.touched || empForm.get('gender')?.dirty)">
+                    <span class="text-danger" *ngIf="empForm.get('gender')?.errors?.['required']">Please select 
+                        Gender*</span>
+                </div> -->
+            </div>
+            <div class="my-3">
+                <label for="">Dob:</label>
+                <input type="date" name="" class="form-control" formControlName="dob" />
+                <div
+                    *ngIf="empForm.get('dob')?.invalid && (isSubmitted || empForm.get('dob')?.touched || empForm.get('dob')?.dirty)">
+                    <span class="text-danger" *ngIf="empForm.get('dob')?.errors?.['required']">Please Enter
+                        Dob*</span>
+                </div>
+            </div>
+            <div class="my-3">
+                <label for="">Salary:</label>
+                <input type="text" name="" class="form-control" formControlName="salary" />
+                <div
+                *ngIf="empForm.get('salary')?.invalid && (isSubmitted || empForm.get('salary')?.touched || empForm.get('salary')?.dirty)">
+                <span class="text-danger" *ngIf="empForm.get('salary')?.errors?.['required']">Please Enter
+                    salary*</span>
+                <span class="text-danger" *ngIf="empForm.get('salary')?.errors?.['pattern']">Name should be in
+                    only Integer*</span>
+            </div>
+            </div>
+            <div class="my-3">
+                <button type="button" (click)="onSave()" class="btn btn-primary me-4">Reset</button>
+                <button type="submit" class="btn btn-secondary">Save</button>
+            </div>
+        </form>
+          <!--End: Reactive Form -->
+    </div>
+</section>
+<app-employee-list></app-employee-list>
