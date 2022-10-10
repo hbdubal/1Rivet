@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ActivatedRoute, Route, Router,  } from '@angular/router';
+import { EmployeeService } from 'src/app/services/employee.service';
 import { Employee } from '../employee.model';
 
 @Component({
@@ -12,12 +14,19 @@ export class EmployeeFormComponent implements OnInit {
   public empForm: FormGroup;
   public employee: Employee[];
   isSubmitted: boolean = false;
+   public id: any;
+  // emp: any;
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private employeeService: EmployeeService, private route: ActivatedRoute, private router:Router) {
+    this.route.params.subscribe((params) => {
+      this.id = params['id'];
+      // console.log(this.id);
+
+    })
     this.employee = [];
     this.empForm = this.fb.group(
       {
-        firstname: ['', [Validators.required, Validators.minLength(5), Validators.pattern('[a-zA-z]*')]],
+        firstname: ['', [Validators.required, Validators.minLength(3), Validators.pattern('[a-zA-z]*')]],
         lastname: ['', [Validators.required, Validators.minLength(3), Validators.pattern('[a-zA-z]*')]],
         email: ['', [Validators.required, Validators.email]],
         gender: ['', [Validators.required]],
@@ -28,25 +37,37 @@ export class EmployeeFormComponent implements OnInit {
 
   }
   ngOnInit(): void {
-    // Form validation
-
-    
   }
-  // Add Data in Form
-  // onSubmit() {
-  //   this.isSubmitted = true;
-  //   this.employee.push(this.empForm.value);
 
-  //   console.log(this.employee);  
-  // }
   // Add data on button click
   onSave() {
     this.isSubmitted = true;
+    this.employeeService.createData(this.empForm.value).subscribe(resp=>
+      {
+        this.router.navigate(['employee']);
+        console.log(resp);
+      })
     if (this.empForm.valid) {
-      this.employee.push(this.empForm.value)
-      this.isSubmitted = false;
+      if (this.id) {
+        this.updateData();
+      }
+      else {
+      }
     }
-
   }
 
+   // Update data on button click
+  listData(employee: any) {
+    this.empForm.patchValue(employee);
+  }
+
+  updateData() {
+    this.employeeService.updateEmp(this.empForm.value,this.id).subscribe((res) => {
+      // this.getData();
+    });
+  }
+  // getData() {
+  //   this.employeeService.getData().subscribe(() => {
+  //   })
+  // }
 }

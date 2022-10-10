@@ -20,8 +20,8 @@
                     <td>{{employee.salary | currency:'INR'}}</td>
                     <td>
                         <button class="btn btn-info me-3" (click)="onDetails(employee.id)">details</button>
-                        <button class="btn btn-warning me-3">edit</button>
-                        <button class="btn btn-danger">delete</button>
+                        <button class="btn btn-warning me-3" (click)="onEditClicked(employee)">edit</button>
+                        <button class="btn btn-danger" (click)="onDelete(employee.id)">delete</button>
                     </td>
                 </tr>
                 <tr>

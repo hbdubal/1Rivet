@@ -23,7 +23,7 @@
                     <span class="text-danger" *ngIf="empForm.get('lastname')?.errors?.['required']">Please Enter
                         LastName*</span>
                     <span class="text-danger" *ngIf="empForm.get('lastname')?.errors?.['minlength']">Name should be
-                        minimum 5 length char*</span>
+                        minimum 3 length char*</span>
                     <span class="text-danger" *ngIf="empForm.get('lastname')?.errors?.['pattern']">Name should be in
                         only char*</span>
                 </div>
@@ -76,11 +76,11 @@
             </div>
             </div>
             <div class="my-3">
-                <button type="button" (click)="onSave()" class="btn btn-primary me-4">Reset</button>
-                <button type="submit" class="btn btn-secondary">Save</button>
+                <button type="reset" class="btn btn-primary me-4">Reset</button>
+                <button type="submit" class="btn btn-secondary" (click)="onSave()" >Save</button>
             </div>
         </form>
           <!--End: Reactive Form -->
     </div>
 </section>
-<app-employee-list></app-employee-list>
+<app-employee-list (empListPatch)="listData($event)"></app-employee-list>
