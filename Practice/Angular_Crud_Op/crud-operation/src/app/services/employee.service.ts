@@ -37,7 +37,5 @@ export class EmployeeService {
   // Delete Data From DataBase
   deleteEmp(id: number): Observable<Employee> {
     return this.http.delete<Employee>(this.empUrl +  id)
-  }
-
-  
+  }  
 }
