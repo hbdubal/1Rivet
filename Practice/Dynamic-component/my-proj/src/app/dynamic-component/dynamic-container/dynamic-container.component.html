@@ -1,0 +1,23 @@
+<section class="m-3">
+    <div class="container-fluid border p-3">
+        <h3 class="text-info mb-3">Dynamic Components in angular</h3>
+        <ul class="dataList p-3">
+            <li (click)="createComponent(productsName.mobile)">Mobile</li>
+            <li (click)="createComponent(productsName.laptop)">Laptop</li>
+            <li (click)="createComponent(productsName.watch)">Watch</li>
+            <li (click)="createComponent(productsName.burger)">Burger</li>
+            <li (click)="createComponent(productsName.ovan)">Ovan</li>
+        </ul>
+    </div>
+</section>
+
+<section class="mt-5">
+    <div class="container-fluid">
+        <div class="display px-3">
+            <h3 class="text-info py-3">Display Component</h3>
+            <ng-container #container>
+
+            </ng-container>
+        </div>
+    </div>
+</section>
