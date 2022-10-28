@@ -1,0 +1,71 @@
+<section class="register-form mt-3">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="card border p-4">
+                    <div class="card-header">
+                        <h3 class="mb-2 text-center text-info">Register</h3>
+                    </div>
+                    <div class="card-body">
+                        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                            <div class="form-group mb-3">
+                                <label for="firstname">FirstName:</label>
+                                <input type="text" class="form-control rounded-0" required formControlName="firstname">
+                                <div
+                                    *ngIf="registerForm.get('firstname')?.invalid && (registerForm.get('firstname')?.touched || registerForm.get('firstname')?.dirty)">
+                                    <span class="text-danger"
+                                        *ngIf="registerForm.get('firstname')?.errors?.['required']">Please Enter Valid
+                                        FirstName*</span>
+                                </div>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="lastname">LastName:</label>
+                                <input type="text" class="form-control rounded-0" required formControlName="lastname">
+                                <div
+                                    *ngIf="registerForm.get('lastname')?.invalid && (registerForm.get('lastname')?.touched || registerForm.get('lastname')?.dirty)">
+                                    <span class="text-danger"
+                                        *ngIf="registerForm.get('lastname')?.errors?.['required']">Please Enter Valid
+                                        Lastname*</span>
+                                </div>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="gender">Gender:</label><br>
+                                <input type="radio" value="male" id="gender" name="gender" formControlName="gender"> Male
+                                <input type="radio" value="female" id="gender" name="gender" formControlName="gender"> Female
+                                <div
+                                    *ngIf="registerForm.get('gender')?.invalid && (registerForm.get('gender')?.touched || registerForm.get('gender')?.dirty)">
+                                    <span class="text-danger"
+                                        *ngIf="registerForm.get('gender')?.errors?.['required']">Please Enter Valid
+                                        Gender*</span>
+                                </div>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="email">Email:</label>
+                                <input type="text" class="form-control rounded-0" required formControlName="email">
+                                <div
+                                    *ngIf="registerForm.get('email')?.invalid && (registerForm.get('email')?.touched || registerForm.get('email')?.dirty)">
+                                    <span class="text-danger"
+                                        *ngIf="registerForm.get('email')?.errors?.['required']">Please Enter Valid
+                                        Email*</span>
+                                </div>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="password">Password:</label>
+                                <input type="password" class="form-control rounded-0" required formControlName="password">
+                                <div
+                                    *ngIf="registerForm.get('password')?.invalid && (registerForm.get('password')?.touched || registerForm.get('password')?.dirty)">
+                                    <span class="text-danger"
+                                        *ngIf="registerForm.get('password')?.errors?.['required']">Please Enter Valid
+                                        Password*</span>
+                                </div>
+                            </div>
+                            <div class="reg_btn">
+                                <button type="submit" class="btn btn-primary">Register</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

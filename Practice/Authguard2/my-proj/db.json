@@ -1,0 +1,48 @@
+{
+  "user": [
+    {
+      "firstname": "Hiral",
+      "lastname": "Dubal",
+      "email": "hirrdubal11@gmail.com",
+      "password": "81405",
+      "id": 1
+    },
+    {
+      "firstname": "Sheetal",
+      "lastname": "Patel",
+      "email": "psheetal11@gmail.com",
+      "password": "45678",
+      "id": 2
+    },
+    {
+      "firstname": "Kiran",
+      "lastname": "Gandhi",
+      "email": "gkiran@gmail.com",
+      "password": "12345",
+      "id": 3
+    },
+    {
+      "firstname": "Hem",
+      "lastname": "Chudgar",
+      "email": "hem11@gmail.com",
+      "password": "903321",
+      "id": 4
+    },
+    {
+      "firstname": "jinal",
+      "lastname": "tandel",
+      "gender": "female",
+      "email": "gsfdfmg",
+      "password": "123",
+      "id": 5
+    },
+    {
+      "firstname": "",
+      "lastname": "",
+      "gender": "",
+      "email": "",
+      "password": "",
+      "id": 6
+    }
+  ]
+}

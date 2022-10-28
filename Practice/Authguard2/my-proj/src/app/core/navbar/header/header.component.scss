@@ -1,0 +1,10 @@
+nav {
+    background-color: #5bc0de;
+    a {
+        cursor: pointer;
+        color: #ffffff;
+        &:hover{
+            color: #115366;
+        }
+    }
+}
