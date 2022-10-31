@@ -16,10 +16,13 @@
             </ul>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" routerLink="login">Login</a>
+                    <a class="nav-link" routerLink="login" *ngIf="isAuthenticate">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" routerLink="register">Register</a>
+                    <a class="nav-link" routerLink="register" *ngIf="isAuthenticate">Register</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn-danger" routerLink="login" *ngIf="!isAuthenticate">Logout</button>
                 </li>
             </ul>
         </div>

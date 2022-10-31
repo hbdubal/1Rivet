@@ -17,16 +17,17 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    component: HomeComponent
-  },
-  {
-    path: 'register',
-    component: RegistrationComponent,
+    component: HomeComponent,
     canActivate:[AuthGuard]
   },
   {
+    path: 'register',
+    component: RegistrationComponent
+  },
+  {
     path: 'login',
-    component: LoginComponent
+    component: LoginComponent,
+    
   },
   {
     path: 'user',
