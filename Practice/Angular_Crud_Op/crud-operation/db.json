@@ -1,15 +1,6 @@
 {
   "employee": [
     {
-      "firstname": "Kiranss",
-      "lastname": "Gandhi",
-      "email": "gkiran16@gmail.com",
-      "gender": "female",
-      "dob": "02/16/1997",
-      "salary": "25000",
-      "id": 3
-    },
-    {
       "firstname": "Hiral",
       "lastname": "Dubal",
       "email": "hirrdubal11@gmail.com",

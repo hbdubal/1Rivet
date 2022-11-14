@@ -23,14 +23,15 @@ export class EmployeeListComponent implements OnInit {
   ngOnInit(): void {
     this.getEmployeeData();
   }
+  
   // Get EmployeeData
   getEmployeeData() {
     this.employeeService.getData().subscribe((data) => {
       this.emp = data;
-
     }
     )
   }
+
   // Get EmployeeDetails on Button Click
   onDetails(id: any) {
     this.router.navigate(['employee/details', id])
